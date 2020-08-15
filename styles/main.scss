@@ -1,9 +1,7 @@
-* {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
-  font-family: "Rubik";
-  font-size: 1.125rem; //18px
-}
-
-@import "header";
+@import "./utilities/variables";
+@import "./utilities//mixins";
+@import "./base/resets";
+@import "./layouts/wrapper";
+@import "./layouts/header";
+@import "./components/buttons";
+@import "./utilities/classes";

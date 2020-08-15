@@ -1,0 +1,17 @@
+.main-header {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  height: 4.7rem;
+  padding: 0 10.5rem;
+  border: 1px solid green;
+}
+
+.main-nav__list {
+  list-style-type: none;
+  display: flex;
+}
+
+.main-nav__item {
+  @include navLinkStyle(black);
+}

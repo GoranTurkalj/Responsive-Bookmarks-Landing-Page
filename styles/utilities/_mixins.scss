@@ -1,0 +1,13 @@
+// MIXINS XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+@mixin navLinkStyle($linkColor) {
+  margin-right: 2.75rem;
+
+  a {
+    color: $linkColor;
+    text-transform: uppercase;
+    text-decoration: none;
+    font: $navLinkFont;
+    letter-spacing: 2px;
+  }
+}
