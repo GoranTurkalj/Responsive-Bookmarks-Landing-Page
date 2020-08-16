@@ -7,3 +7,8 @@
   outline: none;
   background: none;
 }
+
+*::before,
+*::after {
+  box-sizing: border-box;
+}

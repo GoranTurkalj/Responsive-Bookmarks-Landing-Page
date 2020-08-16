@@ -8,9 +8,15 @@
   background: none;
 }
 
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
 .wrapper {
   max-width: 90rem;
-  margin: 0 auto;
+  width: 100%;
   font: 400 1.125rem "Rubik";
 }
 
@@ -25,8 +31,9 @@
       -ms-flex-pack: justify;
           justify-content: space-between;
   height: 4.7rem;
-  padding: 0 10.5rem;
-  border: 1px solid green;
+  padding: 0 2rem;
+  margin-bottom: 5rem;
+  background-color: green;
 }
 
 .main-nav__list {
@@ -46,5 +53,22 @@
   text-decoration: none;
   font: 400 0.8rem "Rubik";
   letter-spacing: 2px;
+}
+
+.main-container {
+  padding: 0 2rem;
+}
+
+.hero-section {
+  background-color: pink;
+}
+
+.hero-image {
+  width: 100%;
+}
+
+.pd-hr {
+  padding-left: 2rem;
+  padding-right: 2rem;
 }
 /*# sourceMappingURL=main.css.map */

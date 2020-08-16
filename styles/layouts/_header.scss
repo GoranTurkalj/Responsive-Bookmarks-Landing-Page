@@ -3,8 +3,9 @@
   align-items: flex-end;
   justify-content: space-between;
   height: 4.7rem;
-  padding: 0 10.5rem;
-  border: 1px solid green;
+  padding: 0 2rem;
+  margin-bottom: 5rem; 
+  background-color: green; 
 }
 
 .main-nav__list {
@@ -15,3 +16,6 @@
 .main-nav__item {
   @include navLinkStyle(black);
 }
+
+
+
