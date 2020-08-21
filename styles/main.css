@@ -1,3 +1,32 @@
+.flex-center--col, .content, .extension-list, .extension-list__card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.text-position, .attribution, .content__title, .content__subtitle, .content__text {
+  text-align: center;
+}
+
+.attribution {
+  color: white;
+  padding: 2rem 0;
+}
+
+.attribution__link {
+  color: gold;
+}
+
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -14,10 +43,14 @@
           box-sizing: border-box;
 }
 
+ul {
+  list-style-type: none;
+}
+
 .wrapper {
   max-width: 90rem;
   width: 100%;
-  font: 400 1.125rem "Rubik";
+  font-family: "Rubik";
 }
 
 .main-header {
@@ -74,10 +107,36 @@
   width: 95%;
 }
 
-.hero-title {
-  font: 500 2rem "Rubik";
-  text-align: center;
+.content {
+  padding: 0 2rem;
+}
+
+.content__title {
   color: #252b46;
+  font-size: 2rem;
+}
+
+.content__subtitle {
+  color: #252b46;
+  font-size: 1.5rem;
+}
+
+.content__text {
+  color: #9194a1;
+  font-size: 1rem;
+  line-height: 1.6;
+  padding-top: 1.5rem;
+  padding-bottom: 2rem;
+}
+
+.content__controls {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 /*------------------------------------------------------*\
@@ -86,14 +145,54 @@
 /*------------------------------------------------------*\
   #EXTENSIONS-SECTION
 \*------------------------------------------------------*/
+.extension-list__card {
+  position: relative;
+  width: 17.5rem;
+  height: 22rem;
+  padding-top: 1rem;
+  margin-bottom: 3.5rem;
+  border-radius: 0 0 0.5rem 0.5rem;
+  -webkit-box-shadow: 0px 5px 5px 4px #f1f2f3;
+          box-shadow: 0px 5px 5px 4px #f1f2f3;
+}
+
 /*------------------------------------------------------*\
   #FAQ-SECTION
 \*------------------------------------------------------*/
 /*------------------------------------------------------*\
   #CONTACT-SECTION
 \*------------------------------------------------------*/
-.pd-hr {
-  padding-left: 2rem;
-  padding-right: 2rem;
+footer {
+  background-color: #252b46;
+}
+
+.btn {
+  padding: 1rem;
+  border: 2px solid transparent;
+  border-radius: 0.5rem;
+  margin-bottom: 2.25rem;
+  font-family: "Rubik";
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: #252b46;
+  background-color: #f7f7f7;
+  -webkit-box-shadow: 0px 5px 5px #e3e4e8;
+          box-shadow: 0px 5px 5px #e3e4e8;
+}
+
+.btn--default {
+  background-color: #5368df;
+  border: 2px solid #5368df;
+  color: white;
+}
+
+.btn--wide {
+  width: 100%;
+}
+
+.btn--important {
+  background-color: #fa5757;
+  border: 2px solid #fa5757;
+  color: white;
 }
 /*# sourceMappingURL=main.css.map */

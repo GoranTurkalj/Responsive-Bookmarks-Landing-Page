@@ -1,0 +1,21 @@
+.flex-center--col {
+    display: flex; 
+    flex-direction: column; 
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+.text-position {
+    text-align: center;
+}
+
+.attribution {
+    @extend .text-position;
+    color: white; 
+    padding: 2rem 0; 
+}
+
+.attribution__link {
+    color: gold; 
+}

@@ -1,9 +1,7 @@
 
-
 /*------------------------------------------------------*\
   #HERO-SECTION
 \*------------------------------------------------------*/
-
 
 .image-container {
   display: flex; 
@@ -16,14 +14,42 @@
   width: 95%; 
 }
 
-.hero-title {
-   font: $h1Font;
-   text-align: center;
-   color: $veryDarkBlue; 
+.content {
+  padding: 0 2rem;
+  @extend .flex-center--col;
+  
 }
 
+.content__title {
+  color: $veryDarkBlue; 
+  font-size: $h1Font;
+  @extend .text-position;
+ 
+}
 
+.content__subtitle {
+  @extend .text-position; 
+  color: $veryDarkBlue; 
+  font-size: $h2Font; 
+  
+}
 
+.content__text {
+  @extend .text-position; 
+  color: $grayishBlue; 
+  font-size: 1rem; 
+  line-height: 1.6;
+  padding-top: 1.5rem; 
+  padding-bottom: 2rem; 
+  
+
+}
+
+.content__controls {
+  width: 100%; 
+  display: flex; 
+  justify-content: space-between;
+}
 
 /*------------------------------------------------------*\
   #FEATURES-SECTION
@@ -37,7 +63,21 @@
   #EXTENSIONS-SECTION
 \*------------------------------------------------------*/
 
+.extension-list {
+  @extend .flex-center--col;
+  
+}
 
+ .extension-list__card {
+   @extend .flex-center--col;
+   position: relative; 
+   width: 17.5rem;
+   height: 22rem; 
+   padding-top: 1rem; 
+   margin-bottom: 3.5rem;  
+   border-radius: 0 0 0.5rem 0.5rem; 
+   box-shadow: 0px 5px 5px 4px  lighten($grayishBlue, 35%);
+ }
 
 
 

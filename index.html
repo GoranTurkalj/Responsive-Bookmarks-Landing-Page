@@ -45,113 +45,115 @@
               alt="hero image"
             />
           </div>
-
-          <div>
-            <h1 class="hero-title">A Simple Bookmark Manager</h1>
-            <p>
+          <div class="content">
+            <h1 class="content__title">A Simple Bookmark Manager</h1>
+            <p class="content__text">
               A clean and simple interface to organize your favourite websites.
               Open a new browser tab and see your sites load instantly. Try it
               for free.
             </p>
-            <div>
-              <button>Get it on Chrome</button>
-              <button>Get it on Firefox</button>
+            <div class="content__controls">
+              <button class="btn btn--default">Get it on Chrome</button>
+              <button class="btn">Get it on Firefox</button>
             </div>
           </div>
         </section>
         <!--FEATURES SECTION-->
         <section>
-          <div>
-            <h2>Features</h2>
-            <p>
+          <div class="content">
+            <h2 class="content__subtitle">Features</h2>
+            <p class="content__text">
               Our aim is to make it quick and easy for you to access your
               favourite websites. Your bookmarks sync between your devices so
               you can access them on the go.
             </p>
+            <ul>
+              <li>
+                <span> Simple Bookmarking</span>
+                <div>
+                  <img src="" alt="" />
+                  <div class="content">
+                    <h3>Bookmark in one click</h3>
+                    <p class="content__text">
+                      Organize your bookmarks however you like. Our simple
+                      drag-and-drop interface gives you complete control over
+                      how you manage your favourite sites.
+                    </p>
+                    <button class="btn btn--default">More info</button>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <span>Speedy Searching</span>
+                <div class="content">
+                  <img src="" alt="" />
+                  <div class="content">
+                    <h3>Intelligent search</h3>
+                    <p class="content__text">
+                      Our powerful search feature will help you find saved sites
+                      in no time at all. No need to trawl through all of your
+                      bookmarks.
+                    </p>
+                    <button class="btn btn--default">More info</button>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <span>Easy Sharing</span>
+                <div>
+                  <img src="" alt="" />
+                  <div class="content">
+                    <h3>Share your bookmarks</h3>
+                    <p class="content__text">
+                      Easily share your bookmarks and collections with others.
+                      Create a shareable link that you can send at the click of
+                      a button.
+                    </p>
+                    <button class="btn btn--default">More info</button>
+                  </div>
+                </div>
+              </li>
+            </ul>
           </div>
-          <ul>
-            <li>
-              <span> Simple Bookmarking</span>
-              <div>
-                <img src="" alt="" />
-                <div>
-                  <h3>Bookmark in one click</h3>
-                  <p>
-                    Organize your bookmarks however you like. Our simple
-                    drag-and-drop interface gives you complete control over how
-                    you manage your favourite sites.
-                  </p>
-                  <button>More info</button>
-                </div>
-              </div>
-            </li>
-            <li>
-              <span>Speedy Searching</span>
-              <div>
-                <img src="" alt="" />
-                <div>
-                  <h3>Intelligent search</h3>
-                  <p>
-                    Our powerful search feature will help you find saved sites
-                    in no time at all. No need to trawl through all of your
-                    bookmarks.
-                  </p>
-                  <button>More info</button>
-                </div>
-              </div>
-            </li>
-            <li>
-              <span>Easy Sharing</span>
-              <div>
-                <img src="" alt="" />
-                <div>
-                  <h3>Share your bookmarks</h3>
-                  <p>
-                    Easily share your bookmarks and collections with others.
-                    Create a shareable link that you can send at the click of a
-                    button.
-                  </p>
-                  <button>More info</button>
-                </div>
-              </div>
-            </li>
-          </ul>
         </section>
         <!--EXTENSIONS SECTION-->
         <section>
-          <div>
-            <h2>Download the extension</h2>
-            <p>
+          <div class="content">
+            <h2 class="content__subtitle">Download the extension</h2>
+            <p class="content__text">
               We’ve got more browsers in the pipeline. Please do let us know if
               you’ve got a favourite you’d like us to prioritize.
             </p>
           </div>
-          <ul>
-            <li>
-              <img src="" alt="" />
+          <ul class="extension-list">
+            <li class="extension-list__card">
+              <img src="./images/logo-chrome.svg" alt="chrome extension logo" />
               <h4>Add to Chrome</h4>
-              <span>Minimum version 62</span>
-              <button>Add & Install Extension</button>
+              <span class="section-content__text">Minimum version 62</span>
+              <button class="btn btn--default">Add & Install Extension</button>
             </li>
-            <li>
-              <img src="" alt="" />
+            <li class="extension-list__card">
+              <img
+                src="./images/logo-firefox.svg"
+                alt="firefox extension logo"
+              />
               <h4>Add to Firefox</h4>
-              <span>Minimum version 55</span>
-              <button>Add & Install Extension</button>
+              <span class="section-content__text">Minimum version 55</span>
+              <button class="btn btn--default">Add & Install Extension</button>
             </li>
-            <li>
-              <img src="" alt="" />
+            <li class="extension-list__card">
+              <img src="./images/logo-opera.svg" alt="opera extension logo" />
               <h4>Add to Opera</h4>
               <span>Minimum version 46</span>
-              <button>Add & Install Extension</button>
+              <button class="btn btn--default">Add & Install Extension</button>
             </li>
           </ul>
         </section>
         <!--FAQ SECTION-->
         <section>
-          <div>
-            <h2>Frequnetly Asked Questions</h2>
-            <p>
+          <div class="content">
+            <h2 class="content__subtitle">Frequnetly Asked Questions</h2>
+            <p class="content__text">
               Here are some of our FAQs. If you have any other questions you’d
               like answered please feel free to email us.
             </p>
@@ -162,7 +164,7 @@
             <li>Is there a mobile app?</li>
             <li>What about other Chromium browsers?</li>
           </ul>
-          <button>More info</button>
+          <button class="btn btn--default">More info</button>
         </section>
         <!--CONTACT SECTION-->
         <section>
@@ -175,37 +177,45 @@
               id="email"
               placeholder="Enter your email address"
             />
-            <button>Contact Us</button>
+            <button class="btn btn--wide btn--important">Contact Us</button>
           </form>
         </section>
       </main>
       <!--Footer-->
       <footer>
-        <div>
+        <section class="flex-center--col">
           <nav>
-            <img src="" alt="" />
-            <ul>
+            <img src="./images/logo-bookmark.svg" alt="" />
+            <ul class="flex-center--col">
               <li><a href="">Features</a></li>
               <li><a href="">Pricing</a></li>
               <li><a href="">Contact</a></li>
             </ul>
           </nav>
-          <div>
-            <ul>
-              <li>
-                <a href=""><img src="" alt="" /></a>
-              </li>
-              <li>
-                <a href=""><img src="" alt="" /></a>
-              </li>
-            </ul>
-          </div>
-        </div>
+          <ul>
+            <li>
+              <a href=""
+                ><img
+                  src="./images/icon-facebook.svg"
+                  alt="facebook social logo"
+              /></a>
+            </li>
+            <li>
+              <a href=""
+                ><img src="./images/icon-twitter.svg" alt="twitter social logo"
+              /></a>
+            </li>
+          </ul>
+        </section>
         <p class="attribution">
           Challenge by
-          <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          <a
+            class="attribution__link"
+            href="https://www.frontendmentor.io?ref=challenge"
+            target="_blank"
             >Frontend Mentor</a
-          >. Coded by <a href="#">Goran Turkalj</a>.
+          >. <br />
+          Coded by <a class="attribution__link" href="#">Goran Turkalj</a>.
         </p>
       </footer>
     </div>
