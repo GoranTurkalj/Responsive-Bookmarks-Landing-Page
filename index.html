@@ -37,10 +37,10 @@
       <!--MAIN CONTENT-->
       <main class="main-container">
         <!--HERO SECTION-->
-        <section class="hero-section">
-          <div class="image-container">
+        <section class="content-section">
+          <div class="image-container bg-pattern">
             <img
-              class="hero-image"
+              class="content-image"
               src="./images/illustration-hero.svg"
               alt="hero image"
             />
@@ -53,13 +53,15 @@
               for free.
             </p>
             <div class="content__controls">
-              <button class="btn btn--default">Get it on Chrome</button>
-              <button class="btn">Get it on Firefox</button>
+              <button class="btn btn--default btn--medium">
+                Get it on Chrome
+              </button>
+              <button class="btn btn--medium">Get it on Firefox</button>
             </div>
           </div>
         </section>
         <!--FEATURES SECTION-->
-        <section>
+        <section class="content-section">
           <div class="content">
             <h2 class="content__subtitle">Features</h2>
             <p class="content__text">
@@ -67,57 +69,51 @@
               favourite websites. Your bookmarks sync between your devices so
               you can access them on the go.
             </p>
-            <ul>
-              <li>
-                <span> Simple Bookmarking</span>
-                <div>
-                  <img src="" alt="" />
-                  <div class="content">
-                    <h3>Bookmark in one click</h3>
-                    <p class="content__text">
-                      Organize your bookmarks however you like. Our simple
-                      drag-and-drop interface gives you complete control over
-                      how you manage your favourite sites.
-                    </p>
-                    <button class="btn btn--default">More info</button>
-                  </div>
-                </div>
-              </li>
-              <li>
-                <span>Speedy Searching</span>
-                <div class="content">
-                  <img src="" alt="" />
-                  <div class="content">
-                    <h3>Intelligent search</h3>
-                    <p class="content__text">
-                      Our powerful search feature will help you find saved sites
-                      in no time at all. No need to trawl through all of your
-                      bookmarks.
-                    </p>
-                    <button class="btn btn--default">More info</button>
-                  </div>
-                </div>
-              </li>
-              <li>
-                <span>Easy Sharing</span>
-                <div>
-                  <img src="" alt="" />
-                  <div class="content">
-                    <h3>Share your bookmarks</h3>
-                    <p class="content__text">
-                      Easily share your bookmarks and collections with others.
-                      Create a shareable link that you can send at the click of
-                      a button.
-                    </p>
-                    <button class="btn btn--default">More info</button>
-                  </div>
-                </div>
-              </li>
-            </ul>
           </div>
+          <ul class="flex-center--col">
+            <li>
+              <span> Simple Bookmarking</span>
+              <img src="" alt="" />
+              <div class="content">
+                <h3>Bookmark in one click</h3>
+                <p class="content__text">
+                  Organize your bookmarks however you like. Our simple
+                  drag-and-drop interface gives you complete control over how
+                  you manage your favourite sites.
+                </p>
+                <button class="btn btn--default">More info</button>
+              </div>
+            </li>
+            <li>
+              <span>Speedy Searching</span>
+              <img src="" alt="" />
+              <div class="content">
+                <h3>Intelligent search</h3>
+                <p class="content__text">
+                  Our powerful search feature will help you find saved sites in
+                  no time at all. No need to trawl through all of your
+                  bookmarks.
+                </p>
+                <button class="btn btn--default">More info</button>
+              </div>
+            </li>
+            <li>
+              <span>Easy Sharing</span>
+              <img src="" alt="" />
+              <div class="content">
+                <h3>Share your bookmarks</h3>
+                <p class="content__text">
+                  Easily share your bookmarks and collections with others.
+                  Create a shareable link that you can send at the click of a
+                  button.
+                </p>
+                <button class="btn btn--default">More info</button>
+              </div>
+            </li>
+          </ul>
         </section>
         <!--EXTENSIONS SECTION-->
-        <section>
+        <section class="content-section">
           <div class="content">
             <h2 class="content__subtitle">Download the extension</h2>
             <p class="content__text">
@@ -125,32 +121,47 @@
               you’ve got a favourite you’d like us to prioritize.
             </p>
           </div>
-          <ul class="extension-list">
-            <li class="extension-list__card">
+          <ul class="flex-center--col">
+            <li class="extension-card">
               <img src="./images/logo-chrome.svg" alt="chrome extension logo" />
-              <h4>Add to Chrome</h4>
-              <span class="section-content__text">Minimum version 62</span>
-              <button class="btn btn--default">Add & Install Extension</button>
+              <div class="extension-card__description">
+                <h4 class="extension-card__title">Add to Chrome</h4>
+                <span class="extension-card__info">Minimum version 62</span>
+              </div>
+              <img src="./images/bg-dots.svg" alt="" />
+              <button class="btn btn--default btn--big">
+                Add & Install Extension
+              </button>
             </li>
-            <li class="extension-list__card">
+            <li class="extension-card">
               <img
                 src="./images/logo-firefox.svg"
                 alt="firefox extension logo"
               />
-              <h4>Add to Firefox</h4>
-              <span class="section-content__text">Minimum version 55</span>
-              <button class="btn btn--default">Add & Install Extension</button>
+              <div class="extension-card__description">
+                <h4 class="extension-card__title">Add to Firefox</h4>
+                <span class="extension-card__info">Minimum version 55</span>
+              </div>
+              <img src="./images/bg-dots.svg" alt="" />
+              <button class="btn btn--default btn--big">
+                Add & Install Extension
+              </button>
             </li>
-            <li class="extension-list__card">
+            <li class="extension-card">
               <img src="./images/logo-opera.svg" alt="opera extension logo" />
-              <h4>Add to Opera</h4>
-              <span>Minimum version 46</span>
-              <button class="btn btn--default">Add & Install Extension</button>
+              <div class="extension-card__description">
+                <h4 class="extension-card__title">Add to Opera</h4>
+                <span class="extension-card__info">Minimum version 46</span>
+              </div>
+              <img src="./images/bg-dots.svg" alt="" />
+              <button class="btn btn--default btn--big">
+                Add & Install Extension
+              </button>
             </li>
           </ul>
         </section>
         <!--FAQ SECTION-->
-        <section>
+        <section class="content-section flex-center--col">
           <div class="content">
             <h2 class="content__subtitle">Frequnetly Asked Questions</h2>
             <p class="content__text">
@@ -167,18 +178,26 @@
           <button class="btn btn--default">More info</button>
         </section>
         <!--CONTACT SECTION-->
-        <section>
-          <span></span>
-          <h2>Stay up-to-date with what we're doing</h2>
-          <form action="">
-            <input
-              type="email"
-              name="email"
-              id="email"
-              placeholder="Enter your email address"
-            />
-            <button class="btn btn--wide btn--important">Contact Us</button>
-          </form>
+        <section class="contact-section">
+          <div class="content">
+            <div class="flex-center--col">
+              <span class="yeah-right">35,000+ already joined</span>
+              <h2 class="content__subtitle content__subtitle--light">
+                Stay up-to-date with what we're doing
+              </h2>
+            </div>
+
+            <form action="" class="form flex-center--col">
+              <input
+                class="form__input"
+                type="email"
+                name="email"
+                id="email"
+                placeholder="Enter your email address"
+              />
+              <button class="btn btn--wide btn--important">Contact Us</button>
+            </form>
+          </div>
         </section>
       </main>
       <!--Footer-->

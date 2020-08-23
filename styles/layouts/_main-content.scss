@@ -3,21 +3,30 @@
   #HERO-SECTION
 \*------------------------------------------------------*/
 
+.content-section {
+  margin-bottom: 9.5rem;
+}
+
+
 .image-container {
+  position: relative; 
   display: flex; 
   align-items: center; 
   justify-content: center;
   margin-bottom: 4rem;
+ 
 }
 
-.hero-image {
+
+.content-image {
   width: 95%; 
+  z-index: 2; 
 }
 
 .content {
   padding: 0 2rem;
   @extend .flex-center--col;
-  
+
 }
 
 .content__title {
@@ -31,24 +40,34 @@
   @extend .text-position; 
   color: $veryDarkBlue; 
   font-size: $h2Font; 
-  
+  font-weight: 500; 
+  letter-spacing: -1px; 
+}
+
+.content__subtitle--light {
+  color: $defaultWhite;
+  font-size: 1.5rem;  
+  letter-spacing: normal;
+  margin-top: 1rem; 
+  margin-bottom: 2rem; 
 }
 
 .content__text {
   @extend .text-position; 
   color: $grayishBlue; 
   font-size: 1rem; 
-  line-height: 1.6;
+  line-height: 1.7;
   padding-top: 1.5rem; 
   padding-bottom: 2rem; 
-  
+   word-spacing: -1px; 
 
 }
 
 .content__controls {
   width: 100%; 
   display: flex; 
-  justify-content: space-between;
+  justify-content: space-between;   
+  
 }
 
 /*------------------------------------------------------*\
@@ -58,28 +77,41 @@
 
 
 
-
 /*------------------------------------------------------*\
   #EXTENSIONS-SECTION
 \*------------------------------------------------------*/
 
-.extension-list {
-  @extend .flex-center--col;
-  
-}
-
- .extension-list__card {
+ .extension-card {
    @extend .flex-center--col;
    position: relative; 
    width: 17.5rem;
    height: 22rem; 
-   padding-top: 1rem; 
+   padding: 1.5rem 0; 
    margin-bottom: 3.5rem;  
    border-radius: 0 0 0.5rem 0.5rem; 
    box-shadow: 0px 5px 5px 4px  lighten($grayishBlue, 35%);
+  
  }
 
 
+ .extension-card__description {
+
+   @extend .flex-center--col; 
+    height: 3.5rem; 
+    margin-bottom: 1rem;
+
+ }
+
+ .extension-card__title {
+   font-size: $h4Font; 
+   color: $veryDarkBlue; 
+   letter-spacing: 1px;
+  
+ }
+
+ .extension-card__info {
+   color: $grayishBlue; 
+ }
 
 /*------------------------------------------------------*\
   #FAQ-SECTION
@@ -91,3 +123,39 @@
 /*------------------------------------------------------*\
   #CONTACT-SECTION
 \*------------------------------------------------------*/
+
+.contact-section {
+  background-color: $primarySoftBlue; 
+  height: 22.5rem; 
+  padding-top: 4.5rem; 
+}
+
+.yeah-right {
+ text-transform: uppercase; 
+ color: $defaultWhite;
+ font-size: 0.8rem; 
+ font-weight: 400;
+ letter-spacing: 5px;
+ 
+}
+
+.form {
+  width: 100%; 
+   
+}
+
+
+.form__input {
+  height: 3rem; 
+  background-color: $defaultWhite;
+  width: 100%;
+  border-radius: $primaryRadius; 
+  padding: 0 1.5rem;
+  margin-bottom: 1rem; 
+  
+  &::placeholder {
+    color: $grayishBlue; 
+    opacity: 0.5;
+    font-size: 0.9rem; 
+  }
+}

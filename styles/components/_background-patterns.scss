@@ -1,0 +1,14 @@
+.bg-pattern {
+
+    &::after {
+        content: ""; 
+        width: 80%; 
+        height: 80%; 
+        position: absolute; 
+        top: 23%; 
+        right: 0%; 
+        z-index: 1; 
+        background-color: $primarySoftBlue; 
+        border-radius: 0 0 0 36%; 
+    }
+}

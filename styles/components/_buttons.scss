@@ -1,20 +1,30 @@
 .btn {
-  padding: 1rem;
+  
   border: 2px solid transparent; 
-  border-radius: 0.5rem; 
-  margin-bottom: 2.25rem; 
+  border-radius: $primaryRadius;
   font-family: "Rubik"; 
   font-size: 0.9rem; 
   font-weight: 500; 
   color: $veryDarkBlue; 
   background-color: rgb(247, 247, 247); 
   box-shadow: 0px 5px 5px  lighten($grayishBlue, 30%); 
+  height: 3rem; 
+  width: 7.25rem; 
 }
 
 .btn--default {
   background-color: $primarySoftBlue; 
   border: 2px solid $primarySoftBlue; 
-  color: $btnDefaultTxt;
+  color: $defaultWhite;
+}
+
+
+
+.btn--medium {
+  width: 9.5rem; 
+}
+.btn--big {
+  width: 14.5rem; 
 }
 
 .btn--wide {
@@ -25,7 +35,8 @@
 .btn--important {
   background-color: $primarySoftRed;
   border: 2px solid $primarySoftRed; 
-  color: $btnDefaultTxt;
+  color: $defaultWhite;
+  box-shadow: none; 
 }
 
 

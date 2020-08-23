@@ -1,4 +1,4 @@
-.flex-center--col, .content, .extension-list, .extension-list__card {
+.flex-center--col, .content, .extension-card, .extension-card__description {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -90,7 +90,12 @@ ul {
 /*------------------------------------------------------*\
   #HERO-SECTION
 \*------------------------------------------------------*/
+.content-section {
+  margin-bottom: 9.5rem;
+}
+
 .image-container {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -103,8 +108,9 @@ ul {
   margin-bottom: 4rem;
 }
 
-.hero-image {
+.content-image {
   width: 95%;
+  z-index: 2;
 }
 
 .content {
@@ -118,15 +124,26 @@ ul {
 
 .content__subtitle {
   color: #252b46;
+  font-size: 1.7rem;
+  font-weight: 500;
+  letter-spacing: -1px;
+}
+
+.content__subtitle--light {
+  color: white;
   font-size: 1.5rem;
+  letter-spacing: normal;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
 }
 
 .content__text {
   color: #9194a1;
   font-size: 1rem;
-  line-height: 1.6;
+  line-height: 1.7;
   padding-top: 1.5rem;
   padding-bottom: 2rem;
+  word-spacing: -1px;
 }
 
 .content__controls {
@@ -145,15 +162,30 @@ ul {
 /*------------------------------------------------------*\
   #EXTENSIONS-SECTION
 \*------------------------------------------------------*/
-.extension-list__card {
+.extension-card {
   position: relative;
   width: 17.5rem;
   height: 22rem;
-  padding-top: 1rem;
+  padding: 1.5rem 0;
   margin-bottom: 3.5rem;
   border-radius: 0 0 0.5rem 0.5rem;
   -webkit-box-shadow: 0px 5px 5px 4px #f1f2f3;
           box-shadow: 0px 5px 5px 4px #f1f2f3;
+}
+
+.extension-card__description {
+  height: 3.5rem;
+  margin-bottom: 1rem;
+}
+
+.extension-card__title {
+  font-size: 1.3rem;
+  color: #252b46;
+  letter-spacing: 1px;
+}
+
+.extension-card__info {
+  color: #9194a1;
 }
 
 /*------------------------------------------------------*\
@@ -162,15 +194,64 @@ ul {
 /*------------------------------------------------------*\
   #CONTACT-SECTION
 \*------------------------------------------------------*/
+.contact-section {
+  background-color: #5368df;
+  height: 22.5rem;
+  padding-top: 4.5rem;
+}
+
+.yeah-right {
+  text-transform: uppercase;
+  color: white;
+  font-size: 0.8rem;
+  font-weight: 400;
+  letter-spacing: 5px;
+}
+
+.form {
+  width: 100%;
+}
+
+.form__input {
+  height: 3rem;
+  background-color: white;
+  width: 100%;
+  border-radius: 0.4rem;
+  padding: 0 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.form__input::-webkit-input-placeholder {
+  color: #9194a1;
+  opacity: 0.5;
+  font-size: 0.9rem;
+}
+
+.form__input:-ms-input-placeholder {
+  color: #9194a1;
+  opacity: 0.5;
+  font-size: 0.9rem;
+}
+
+.form__input::-ms-input-placeholder {
+  color: #9194a1;
+  opacity: 0.5;
+  font-size: 0.9rem;
+}
+
+.form__input::placeholder {
+  color: #9194a1;
+  opacity: 0.5;
+  font-size: 0.9rem;
+}
+
 footer {
   background-color: #252b46;
 }
 
 .btn {
-  padding: 1rem;
   border: 2px solid transparent;
-  border-radius: 0.5rem;
-  margin-bottom: 2.25rem;
+  border-radius: 0.4rem;
   font-family: "Rubik";
   font-size: 0.9rem;
   font-weight: 500;
@@ -178,12 +259,22 @@ footer {
   background-color: #f7f7f7;
   -webkit-box-shadow: 0px 5px 5px #e3e4e8;
           box-shadow: 0px 5px 5px #e3e4e8;
+  height: 3rem;
+  width: 7.25rem;
 }
 
 .btn--default {
   background-color: #5368df;
   border: 2px solid #5368df;
   color: white;
+}
+
+.btn--medium {
+  width: 9.5rem;
+}
+
+.btn--big {
+  width: 14.5rem;
 }
 
 .btn--wide {
@@ -194,5 +285,19 @@ footer {
   background-color: #fa5757;
   border: 2px solid #fa5757;
   color: white;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.bg-pattern::after {
+  content: "";
+  width: 80%;
+  height: 80%;
+  position: absolute;
+  top: 23%;
+  right: 0%;
+  z-index: 1;
+  background-color: #5368df;
+  border-radius: 0 0 0 36%;
 }
 /*# sourceMappingURL=main.css.map */

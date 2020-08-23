@@ -4,14 +4,18 @@ $primarySoftBlue: hsl(231, 69%, 60%);
 $primarySoftRed: hsl(0, 94%, 66%);
 $grayishBlue: hsl(229, 8%, 60%);
 $veryDarkBlue: hsl(229, 31%, 21%);
-$btnDefaultTxt: rgb(255, 255, 255); 
+$defaultWhite: rgb(255, 255, 255); 
+
 
 //Fonts
 $normalFont: 1rem;
 $navLinkFont: 400 0.8rem "Rubik";
 $h1Font: 2rem;
-$h2Font: 1.5rem;
+$h2Font: 1.7rem;
+$h4Font: 1.3rem; 
 $buttonFont: 400 0.9rem "Rubik";
 
 
+//Border Radius
 
+$primaryRadius: 0.4rem; 
