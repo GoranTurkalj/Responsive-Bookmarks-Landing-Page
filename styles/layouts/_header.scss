@@ -13,9 +13,13 @@
   display: flex;
 }
 
-.main-nav__item {
-  @include navLinkStyle(black);
+.nav__link {
+    
+    text-transform: uppercase;
+    text-decoration: none; 
+    color: $navLinkGrey; 
+    letter-spacing: 3px;
+    font-weight: 400; 
+    font-size: 0.95rem; 
+    font-family: "Rubik";  
 }
-
-
-

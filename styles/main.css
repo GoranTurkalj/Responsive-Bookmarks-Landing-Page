@@ -1,4 +1,16 @@
-.flex-center--col, .content, .extension-card, .extension-card__description {
+.flex-center {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.flex-center--col, .extension-card, .extension-card__description {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -6,6 +18,18 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.flex-center--row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -75,23 +99,32 @@ ul {
   display: flex;
 }
 
-.main-nav__item {
-  margin-right: 2.75rem;
-}
-
-.main-nav__item a {
-  color: black;
+.nav__link {
   text-transform: uppercase;
   text-decoration: none;
-  font: 400 0.8rem "Rubik";
-  letter-spacing: 2px;
+  color: #e7e6ea;
+  letter-spacing: 3px;
+  font-weight: 400;
+  font-size: 0.95rem;
+  font-family: "Rubik";
+}
+
+.bottom-line, .features-list__item {
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid #d6d7dc;
+  margin-bottom: 2rem;
+}
+
+.top-line {
+  padding-top: 2rem;
+  border-top: 1px solid #d6d7dc;
 }
 
 /*------------------------------------------------------*\
   #HERO-SECTION
 \*------------------------------------------------------*/
 .content-section {
-  margin-bottom: 9.5rem;
+  margin-bottom: 7.5rem;
 }
 
 .image-container {
@@ -159,6 +192,28 @@ ul {
 /*------------------------------------------------------*\
   #FEATURES-SECTION
 \*------------------------------------------------------*/
+.features-list {
+  margin-bottom: 2.75rem;
+}
+
+.features-list__item {
+  width: 100%;
+  text-align: center;
+}
+
+.features-list__link {
+  display: inline-block;
+  text-decoration: none;
+  font-size: 1.125rem;
+  color: #525560;
+  cursor: pointer;
+}
+
+.features-tab__image {
+  width: 100%;
+  padding: 0 1.75rem;
+}
+
 /*------------------------------------------------------*\
   #EXTENSIONS-SECTION
 \*------------------------------------------------------*/
@@ -191,6 +246,51 @@ ul {
 /*------------------------------------------------------*\
   #FAQ-SECTION
 \*------------------------------------------------------*/
+.description-list {
+  font-family: "Rubik";
+  font-size: 1rem;
+  color: #252b46;
+  margin-top: 2.75rem;
+  margin-bottom: 1rem;
+  width: 100%;
+}
+
+.description-list__question {
+  width: 100%;
+  text-align: left;
+  font-family: inherit;
+  font-size: inherit;
+  position: relative;
+  cursor: pointer;
+}
+
+.description-list__arrow {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  -webkit-transition: -webkit-transform 250ms;
+  transition: -webkit-transform 250ms;
+  transition: transform 250ms;
+  transition: transform 250ms, -webkit-transform 250ms;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.description-list__arrow--expanded {
+  -webkit-transform: translateY(-50%) scale(1, -1);
+          transform: translateY(-50%) scale(1, -1);
+}
+
+.description-list__arrow--expanded .arrow-stroke {
+  stroke: #fa5757;
+}
+
+.description-list__answer {
+  line-height: 2;
+  padding-top: 2.5rem;
+  padding-bottom: 0.5rem;
+}
+
 /*------------------------------------------------------*\
   #CONTACT-SECTION
 \*------------------------------------------------------*/
@@ -249,18 +349,35 @@ footer {
   background-color: #252b46;
 }
 
+.footer-section {
+  height: 20.7rem;
+  padding: 40px 0;
+}
+
+.footer-nav-list {
+  height: 7rem;
+}
+
+.footer-social-list {
+  width: 7rem;
+  padding-left: 0.2rem;
+  padding-right: 0.6rem;
+}
+
 .btn {
   border: 2px solid transparent;
   border-radius: 0.4rem;
   font-family: "Rubik";
   font-size: 0.9rem;
-  font-weight: 500;
+  font-weight: 400;
   color: #252b46;
   background-color: #f7f7f7;
   -webkit-box-shadow: 0px 5px 5px #e3e4e8;
           box-shadow: 0px 5px 5px #e3e4e8;
   height: 3rem;
   width: 7.25rem;
+  letter-spacing: 1px;
+  cursor: pointer;
 }
 
 .btn--default {

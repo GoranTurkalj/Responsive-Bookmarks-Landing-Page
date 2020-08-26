@@ -4,12 +4,14 @@
   border-radius: $primaryRadius;
   font-family: "Rubik"; 
   font-size: 0.9rem; 
-  font-weight: 500; 
+  font-weight: 400; 
   color: $veryDarkBlue; 
   background-color: rgb(247, 247, 247); 
   box-shadow: 0px 5px 5px  lighten($grayishBlue, 30%); 
   height: 3rem; 
   width: 7.25rem; 
+  letter-spacing: 1px;
+  cursor: pointer; 
 }
 
 .btn--default {
@@ -17,7 +19,6 @@
   border: 2px solid $primarySoftBlue; 
   color: $defaultWhite;
 }
-
 
 
 .btn--medium {

@@ -4,7 +4,7 @@
 \*------------------------------------------------------*/
 
 .content-section {
-  margin-bottom: 9.5rem;
+  margin-bottom: 7.5rem;
 }
 
 
@@ -25,7 +25,6 @@
 
 .content {
   padding: 0 2rem;
-  @extend .flex-center--col;
 
 }
 
@@ -74,7 +73,37 @@
   #FEATURES-SECTION
 \*------------------------------------------------------*/
 
+.features-list  {
 
+  margin-bottom: 2.75rem; 
+}
+
+
+.features-list__item {
+  @extend .bottom-line; 
+  width: 100%; 
+  text-align: center; 
+  
+}
+
+.features-list__link {
+ 
+  display: inline-block; 
+  text-decoration: none; 
+  font-size: 1.125rem; 
+  color: darken($grayishBlue, 25%); 
+  cursor: pointer; 
+}
+
+//ovo bi trebalo na article element
+.features-tab {}
+
+
+
+.features-tab__image {
+  width: 100%; 
+  padding: 0 1.75rem; 
+}
 
 
 /*------------------------------------------------------*\
@@ -116,7 +145,52 @@
 /*------------------------------------------------------*\
   #FAQ-SECTION
 \*------------------------------------------------------*/
+ 
+.description-list {
+  font-family: "Rubik"; 
+  font-size: 1rem; 
+  color: $veryDarkBlue;  
+  margin-top: 2.75rem; 
+  margin-bottom: 1rem; 
+  width: 100%; 
+}
 
+.description-list__question {
+  width: 100%; 
+  text-align: left; 
+  font-family: inherit; 
+  font-size: inherit;
+  position: relative;
+  cursor: pointer; 
+}
+
+.description-list__arrow {
+  position: absolute; 
+  right: 0; 
+  top: 50%; 
+  transition: transform 250ms; 
+  transform: translateY(-50%); 
+}
+
+
+
+//This is applied when user clcks on a question
+.description-list__arrow--expanded {
+  
+  transform: translateY(-50%) scale(1, -1); 
+
+  .arrow-stroke {
+    stroke: $primarySoftRed;
+  }
+   
+}
+
+
+.description-list__answer {
+  line-height: 2;
+  padding-top: 2.5rem;
+  padding-bottom: 0.5rem; 
+}
 
 
 
