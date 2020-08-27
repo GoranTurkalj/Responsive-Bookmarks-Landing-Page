@@ -21,5 +21,9 @@
     letter-spacing: 3px;
     font-weight: 400; 
     font-size: 0.95rem; 
-    font-family: "Rubik";  
+    font-family: "Rubik"; 
+    
+    &:hover, &:focus {
+      color: $primarySoftRed; 
+    }
 }

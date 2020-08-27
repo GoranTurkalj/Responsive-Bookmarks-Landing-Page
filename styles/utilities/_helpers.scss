@@ -30,8 +30,15 @@
     @extend .text-position;
     color: white; 
     padding: 2rem 0; 
+    font-size: 0.7rem; 
 }
 
 .attribution__link {
-    color: gold; 
+    color: $primarySoftBlue;
+    text-decoration: none; 
+    cursor: pointer;
+    
+    &:hover, &:focus {
+        color: $primarySoftRed;
+    }
 }

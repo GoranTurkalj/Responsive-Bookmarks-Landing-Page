@@ -45,10 +45,17 @@
 .attribution {
   color: white;
   padding: 2rem 0;
+  font-size: 0.7rem;
 }
 
 .attribution__link {
-  color: gold;
+  color: #5368df;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.attribution__link:hover, .attribution__link:focus {
+  color: #fa5757;
 }
 
 * {
@@ -109,7 +116,11 @@ ul {
   font-family: "Rubik";
 }
 
-.bottom-line, .features-list__item {
+.nav__link:hover, .nav__link:focus {
+  color: #fa5757;
+}
+
+.bottom-line {
   padding-bottom: 1.5rem;
   border-bottom: 1px solid #d6d7dc;
   margin-bottom: 2rem;
@@ -207,11 +218,31 @@ ul {
   font-size: 1.125rem;
   color: #525560;
   cursor: pointer;
+  position: relative;
+  width: 100%;
+  padding: 1rem 0;
+}
+
+.features-list__link:hover {
+  color: #fa5757;
+}
+
+.features-list__link--active::after {
+  content: "";
+  width: 9rem;
+  height: 0.3rem;
+  background-color: #fa5757;
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  top: 93%;
 }
 
 .features-tab__image {
   width: 100%;
-  padding: 0 1.75rem;
+  padding: 0 2rem;
+  z-index: 2;
 }
 
 /*------------------------------------------------------*\
@@ -364,26 +395,41 @@ footer {
   padding-right: 0.6rem;
 }
 
+.social-link:hover .icon-fill, .social-link:focus .icon-fill {
+  fill: #fa5757;
+}
+
 .btn {
   border: 2px solid transparent;
   border-radius: 0.4rem;
   font-family: "Rubik";
   font-size: 0.9rem;
-  font-weight: 400;
+  font-weight: 500;
   color: #252b46;
   background-color: #f7f7f7;
   -webkit-box-shadow: 0px 5px 5px #e3e4e8;
           box-shadow: 0px 5px 5px #e3e4e8;
   height: 3rem;
   width: 7.25rem;
-  letter-spacing: 1px;
   cursor: pointer;
+  -webkit-transition: all 200ms;
+  transition: all 200ms;
+}
+
+.btn:hover, .btn:focus {
+  border: 2px solid #252b46;
 }
 
 .btn--default {
   background-color: #5368df;
   border: 2px solid #5368df;
   color: white;
+}
+
+.btn--default:hover, .btn--default:focus {
+  border: 2px solid #5368df;
+  color: #5368df;
+  background-color: white;
 }
 
 .btn--medium {
@@ -406,6 +452,12 @@ footer {
           box-shadow: none;
 }
 
+.btn--important:hover, .btn--important:focus {
+  background-color: white;
+  border: 2px solid #fa5757;
+  color: #fa5757;
+}
+
 .bg-pattern::after {
   content: "";
   width: 80%;
@@ -416,5 +468,19 @@ footer {
   z-index: 1;
   background-color: #5368df;
   border-radius: 0 0 0 36%;
+}
+
+.bg-pattern--left::after {
+  content: "";
+  width: 80%;
+  height: 100%;
+  position: absolute;
+  top: 18%;
+  left: 0;
+  z-index: 1;
+  background-color: #5368df;
+  border-radius: 0 0 0 36%;
+  -webkit-transform: scale(-1, 1);
+          transform: scale(-1, 1);
 }
 /*# sourceMappingURL=main.css.map */

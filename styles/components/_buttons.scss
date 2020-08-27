@@ -4,20 +4,31 @@
   border-radius: $primaryRadius;
   font-family: "Rubik"; 
   font-size: 0.9rem; 
-  font-weight: 400; 
+  font-weight: 500; 
   color: $veryDarkBlue; 
   background-color: rgb(247, 247, 247); 
   box-shadow: 0px 5px 5px  lighten($grayishBlue, 30%); 
   height: 3rem; 
   width: 7.25rem; 
-  letter-spacing: 1px;
   cursor: pointer; 
+  transition: all 200ms; 
+
+  &:hover, &:focus {
+    border: 2px solid $veryDarkBlue;
+  }
+ 
 }
 
 .btn--default {
   background-color: $primarySoftBlue; 
   border: 2px solid $primarySoftBlue; 
   color: $defaultWhite;
+
+    &:hover, &:focus {
+    border: 2px solid $primarySoftBlue; 
+    color: $primarySoftBlue; 
+    background-color: $defaultWhite;
+    }
 }
 
 
@@ -38,6 +49,12 @@
   border: 2px solid $primarySoftRed; 
   color: $defaultWhite;
   box-shadow: none; 
+
+  &:hover, &:focus {
+    background-color: $defaultWhite; 
+    border: 2px solid $primarySoftRed;
+    color: $primarySoftRed;
+  }
 }
 
 

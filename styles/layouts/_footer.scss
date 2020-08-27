@@ -22,3 +22,15 @@ footer {
    padding-right: 0.6rem; 
   
 }
+
+
+.social-link {
+
+  &:hover, &:focus {
+
+    .icon-fill {
+        fill: $primarySoftRed; 
+    }
+  }
+    
+}

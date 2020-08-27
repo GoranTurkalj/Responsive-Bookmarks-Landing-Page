@@ -80,7 +80,7 @@
 
 
 .features-list__item {
-  @extend .bottom-line; 
+ 
   width: 100%; 
   text-align: center; 
   
@@ -93,7 +93,29 @@
   font-size: 1.125rem; 
   color: darken($grayishBlue, 25%); 
   cursor: pointer; 
+  position: relative; 
+  width: 100%; 
+  padding: 1rem 0; 
+
+  &:hover {
+    color: $primarySoftRed;
+  }
 }
+
+.features-list__link--active {
+  
+  &::after {
+    content: ""; 
+    width: 9rem; 
+    height: 0.3rem; 
+    background-color: $primarySoftRed;
+    position: absolute; 
+    left: 50%;
+    transform: translateX(-50%);  
+    top: 93%; 
+  }
+}
+
 
 //ovo bi trebalo na article element
 .features-tab {}
@@ -102,7 +124,8 @@
 
 .features-tab__image {
   width: 100%; 
-  padding: 0 1.75rem; 
+  padding: 0 2rem; 
+  z-index: 2; 
 }
 
 
