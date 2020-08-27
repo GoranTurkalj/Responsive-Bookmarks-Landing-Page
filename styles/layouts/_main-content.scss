@@ -3,12 +3,16 @@
   #HERO-SECTION
 \*------------------------------------------------------*/
 
+
 .content-section {
   margin-bottom: 7.5rem;
 }
 
 
 .image-container {
+
+  width: 100%; 
+  max-width: 41.5rem; 
   position: relative; 
   display: flex; 
   align-items: center; 
@@ -24,19 +28,23 @@
 }
 
 .content {
-  padding: 0 2rem;
+  padding: 0 2rem; 
+}
 
+.content--wider{
+  padding: 0 1.75rem; 
 }
 
 .content__title {
   color: $veryDarkBlue; 
   font-size: $h1Font;
-  @extend .text-position;
+  text-align: center; 
  
 }
 
 .content__subtitle {
-  @extend .text-position; 
+  
+  text-align: center; 
   color: $veryDarkBlue; 
   font-size: $h2Font; 
   font-weight: 500; 
@@ -52,18 +60,18 @@
 }
 
 .content__text {
-  @extend .text-position; 
+  text-align: center; 
   color: $grayishBlue; 
   font-size: 1rem; 
   line-height: 1.7;
   padding-top: 1.5rem; 
   padding-bottom: 2rem; 
-   word-spacing: -1px; 
-
+  max-width: 33.75rem; 
 }
 
 .content__controls {
   width: 100%; 
+  max-width: 21.5rem; 
   display: flex; 
   justify-content: space-between;   
   
@@ -74,8 +82,10 @@
 \*------------------------------------------------------*/
 
 .features-list  {
-
+  margin: 0 auto;
   margin-bottom: 2.75rem; 
+  max-width: 34rem;
+  
 }
 
 
@@ -118,7 +128,10 @@
 
 
 //ovo bi trebalo na article element
-.features-tab {}
+.features-tab {
+
+
+}
 
 
 
@@ -132,6 +145,13 @@
 /*------------------------------------------------------*\
   #EXTENSIONS-SECTION
 \*------------------------------------------------------*/
+
+  .extension-list {
+    @extend .flex-center--col; 
+    margin-top: 2rem; 
+  }
+
+
 
  .extension-card {
    @extend .flex-center--col;
@@ -176,6 +196,8 @@
   margin-top: 2.75rem; 
   margin-bottom: 1rem; 
   width: 100%; 
+  max-width: 34rem; //desktop size
+  
 }
 
 .description-list__question {
@@ -246,6 +268,7 @@
   height: 3rem; 
   background-color: $defaultWhite;
   width: 100%;
+  max-width: 19.5rem; 
   border-radius: $primaryRadius; 
   padding: 0 1.5rem;
   margin-bottom: 1rem; 
@@ -256,3 +279,6 @@
     font-size: 0.9rem; 
   }
 }
+
+
+@import "media-main-content"; 

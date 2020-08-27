@@ -1,6 +1,5 @@
 @import "./utilities/variables";
 @import "./utilities//mixins";
-@import "./utilities/helpers";
 @import "./base/resets";
 @import "./layouts/wrapper";
 @import "./layouts/header";
@@ -9,4 +8,5 @@
 @import "./layouts/footer"; 
 @import "./components/buttons";
 @import "./components//background-patterns"; 
+@import "./utilities/helpers";
 

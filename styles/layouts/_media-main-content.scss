@@ -1,0 +1,38 @@
+@media only screen and (min-width: 31.25rem) {
+ 
+/*------------------------------------------------------*\
+  #HERO-SECTION
+\*------------------------------------------------------*/
+
+  .image-container {
+   margin-bottom: 7rem;
+   }
+
+}
+
+
+@media only screen and (min-width: 41.5rem) {
+ 
+/*------------------------------------------------------*\
+  #HERO-SECTION
+\*------------------------------------------------------*/
+
+  .hero-section {
+    display: flex; 
+    flex-direction: row-reverse; 
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  
+  .image-container {
+    margin-bottom: 0; 
+  }
+
+ 
+  .content__controls {
+      min-width: 19.8rem; 
+  }
+
+ 
+}

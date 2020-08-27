@@ -9,7 +9,7 @@
   background-color: rgb(247, 247, 247); 
   box-shadow: 0px 5px 5px  lighten($grayishBlue, 30%); 
   height: 3rem; 
-  width: 7.25rem; 
+  width: 7.25rem;  
   cursor: pointer; 
   transition: all 200ms; 
 
@@ -49,6 +49,7 @@
   border: 2px solid $primarySoftRed; 
   color: $defaultWhite;
   box-shadow: none; 
+  max-width: 19.5rem; 
 
   &:hover, &:focus {
     background-color: $defaultWhite; 
