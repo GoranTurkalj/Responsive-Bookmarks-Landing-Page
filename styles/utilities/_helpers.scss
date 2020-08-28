@@ -21,7 +21,12 @@
 }
 
 
-.attribution {
+.flex-position {
+    @extend .flex-center--col;
+}
+
+
+.attribution { 
     text-align: center; 
     color: white; 
     padding: 2rem 0; 
@@ -42,5 +47,14 @@
 
     .text-align {
         text-align: left; 
+    }
+
+
+    .flex-position {
+        align-items: flex-start; 
+    }
+
+    .desktop-flex--row {
+    flex-direction: row;
     }
 }

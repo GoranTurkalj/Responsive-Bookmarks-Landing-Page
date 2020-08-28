@@ -129,7 +129,11 @@
 
 //ovo bi trebalo na article element
 .features-tab {
-
+  
+    display: flex; 
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column; 
 
 }
 
@@ -165,7 +169,7 @@
   
  }
 
-
+ 
  .extension-card__description {
 
    @extend .flex-center--col; 
