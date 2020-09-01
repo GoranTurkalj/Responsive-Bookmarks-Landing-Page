@@ -42,6 +42,27 @@
   #FEATURES-SECTION
   \*------------------------------------------------------*/
 
- 
- 
+    .features-list {
+     max-width: 45.5rem;
+      
+    }
+    
+    .features-list__link {
+      padding: 2rem 0; 
+    }
+
+
+    .features-list__link--active {
+  
+     &::after {
+       content: ""; 
+       width: 100%;  
+     }
+   }
+
+   .features-list__item:first-of-type {
+     a {
+       border-top: none;
+     }
+   }
 }

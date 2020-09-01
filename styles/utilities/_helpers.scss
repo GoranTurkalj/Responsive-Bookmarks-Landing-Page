@@ -13,11 +13,11 @@
     
 }
 
-.flex-center--row {
+.flex-col-to-row {
     display: flex; 
-    align-items: center;
+    flex-direction: column; 
     justify-content: space-between;
-    
+    align-items: center;
 }
 
 
@@ -48,6 +48,13 @@
     .text-align {
         text-align: left; 
     }
+
+
+    .flex-col-to-row {
+    display: flex; 
+    flex-direction: row; 
+    
+   }
 
 
     .flex-position {

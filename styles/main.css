@@ -154,7 +154,7 @@ ul {
 \*------------------------------------------------------*/
 .features-list {
   margin: 0 auto;
-  margin-bottom: 2.75rem;
+  margin-bottom: 4.4rem;
   max-width: 34rem;
 }
 
@@ -172,10 +172,15 @@ ul {
   position: relative;
   width: 100%;
   padding: 1rem 0;
+  border-bottom: 1px solid #d6d7dc;
 }
 
 .features-list__link:hover {
   color: #fa5757;
+}
+
+.features-list__item:first-of-type a {
+  border-top: 1px solid #d6d7dc;
 }
 
 .features-list__link--active::after {
@@ -386,6 +391,19 @@ ul {
   /*------------------------------------------------------*\
   #FEATURES-SECTION
   \*------------------------------------------------------*/
+  .features-list {
+    max-width: 45.5rem;
+  }
+  .features-list__link {
+    padding: 2rem 0;
+  }
+  .features-list__link--active::after {
+    content: "";
+    width: 100%;
+  }
+  .features-list__item:first-of-type a {
+    border-top: none;
+  }
 }
 
 footer {
@@ -405,6 +423,12 @@ footer {
   width: 7rem;
   padding-left: 0.2rem;
   padding-right: 0.6rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .social-link:hover .icon-fill, .social-link:focus .icon-fill {
@@ -525,16 +549,20 @@ footer {
           justify-content: space-between;
 }
 
-.flex-center--row {
+.flex-col-to-row {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .attribution {
@@ -557,6 +585,15 @@ footer {
 @media only screen and (min-width: 41.5rem) {
   .text-align {
     text-align: left;
+  }
+  .flex-col-to-row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
   }
   .flex-position {
     -webkit-box-align: start;
