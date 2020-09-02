@@ -8,9 +8,62 @@
   
 }
 
+.main-nav {
+  width: 100%; 
+  display: flex; 
+}
+
+//Default for nav control button and logo
+.main-nav__control {
+  display: flex; 
+  justify-content: space-between;
+  width: 100%; 
+
+}
+
+
+//This applies to the main nav when in mobile view and  menu is opened
+.main-nav--mobile-open {
+  position: fixed; 
+  background-color: $darkBlueTrans; 
+  top: 0; 
+  left: 0; 
+  width: 100vw; 
+  height: 100vh; 
+  z-index: 10; 
+  flex-direction: column; 
+  align-items: center;
+  justify-content: space-between;
+  padding: 3.2rem 2rem;
+  
+}
+
+
 .main-nav__list {
-  list-style-type: none;
-  display: flex;
+  list-style-type: none; 
+  width: 100%;
+  
+  & li:first-of-type {
+     border-top: 1px solid lighten($grayishBlue, 25%);
+  }
+
+   & li:last-of-type {
+     border-bottom: none; 
+  }
+}
+
+
+
+
+.main-nav__item {
+  width: 100%; 
+  display: flex; 
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; 
+  border-bottom: 1px solid lighten($grayishBlue, 25%);
+  padding: 1.4rem 0; 
+
 }
 
 .nav__link {
@@ -27,3 +80,34 @@
       color: $primarySoftRed; 
     }
 }
+
+
+.nav__link--mobile {
+  font-size: 1.3rem;  
+  width: 100%; 
+  text-align: center; 
+  
+}
+
+
+.social-list {
+   width: 7rem;
+   padding-left: 0.2rem; 
+   padding-right: 0.6rem; 
+   display: flex; 
+   justify-content: space-between;
+   align-items: center;
+  
+}
+
+.social-link {
+
+  &:hover, &:focus {
+
+    .icon-fill {
+        fill: $primarySoftRed; 
+    }
+  }
+    
+}
+
