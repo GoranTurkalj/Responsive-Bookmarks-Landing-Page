@@ -1,0 +1,43 @@
+@media only screen and (min-width: 50rem) {
+
+  footer {
+      padding: 0 2rem; 
+     
+  }
+
+  .footer-section {
+      flex-direction: row;
+      justify-content: space-between;
+      height: 5.5rem;
+     
+  }
+
+  .footer-nav {
+      flex-direction: row;  
+      height: auto; 
+  }
+
+  .footer-nav-list {
+      width: 100%;
+      height: 100%; 
+      padding-left: 4rem; 
+      flex-direction: row;
+     
+  }
+
+  .footer-link {
+
+    margin-right: 2.9rem; 
+  }
+}
+
+
+@media only screen and (min-width: 80rem) { 
+
+  footer {
+      padding: 0 10.25rem;  
+  }
+
+
+   
+}

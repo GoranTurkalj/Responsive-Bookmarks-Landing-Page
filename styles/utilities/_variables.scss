@@ -4,20 +4,24 @@ $primarySoftBlue: hsl(231, 69%, 60%);
 $primarySoftRed: hsl(0, 94%, 66%);
 $grayishBlue: hsl(229, 8%, 60%);
 $navLinkGrey: hsl(255, 8%, 91%); 
-$veryDarkBlue: hsl(229, 31%, 21%);
-$darkBlueTrans: rgba(37, 43, 70, 0.9);
+$veryDarkBlue: #252b46;
+$darkBlueTrans: #252b46e6;
 
 $defaultWhite: rgb(255, 255, 255); 
 
 
 //Fonts
 $normalFont: 1rem;
+$normalTxtDesk: 1.125rem; 
 $h1Font: 2rem;
+$h1FontDesk: 3rem;
 $h2Font: 1.7rem;
+$h2FontDesk: 2rem; 
 $h4Font: 1.3rem; 
 $buttonFont: 400 0.9rem "Rubik";
 
 
 //Border Radius
-
 $primaryRadius: 0.4rem; 
+
+

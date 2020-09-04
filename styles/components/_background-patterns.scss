@@ -10,8 +10,11 @@
         z-index: 1; 
         background-color: $primarySoftBlue; 
         border-radius: 0 0 0 36%; 
+        transition: all 300ms; 
     }
 }
+
+
 .bg-pattern--left {
 
     &::after {
@@ -25,5 +28,41 @@
         background-color: $primarySoftBlue; 
         border-radius: 0 0 0 36%; 
         transform: scale(-1,1); 
+        transition: all 300ms; 
     }
+}
+
+@media only screen and (min-width: 80rem) {
+
+
+.bg-pattern {
+
+    &::after {
+        content: ""; 
+        width: 70%; 
+        height: 80%; 
+
+    }
+}
+
+
+
+.bg-pattern--left {
+
+   &::after {
+        content: ""; 
+        width: 88%;
+        height: 105%; 
+        top: 24%;  
+        transition: all 300ms; 
+    }
+
+}
+
+
+
+
+
+
+
 }

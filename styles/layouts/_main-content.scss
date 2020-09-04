@@ -12,7 +12,7 @@
 .image-container {
 
   width: 100%; 
-  max-width: 41.5rem; 
+  max-width: 38rem; 
   position: relative; 
   display: flex; 
   align-items: center; 
@@ -21,11 +21,22 @@
  
 }
 
+.image-container--hero { 
+  max-width: 45rem; 
+
+}
+
 
 .content-image {
   width: 95%; 
   z-index: 2; 
 }
+
+//refers to the element that holds the page title and description with 2 buttons
+.title-container {
+  padding: 0;  
+}
+
 
 .content {
   padding: 0 2rem; 
@@ -35,11 +46,15 @@
   padding: 0 1.75rem; 
 }
 
+.content--responsive {
+  padding: 0 2rem; 
+}
+
 .content__title {
   color: $veryDarkBlue; 
   font-size: $h1Font;
   text-align: center; 
- 
+   
 }
 
 .content__subtitle {
@@ -69,23 +84,34 @@
   max-width: 33.75rem; 
 }
 
-.content__controls {
+
+.controls__wrapper {
+  padding: 0; 
   width: 100%; 
-  max-width: 21.5rem; 
+  max-width: 20rem; 
+}
+
+.content__controls {
+ 
   display: flex; 
   justify-content: space-between;   
   
 }
 
+
+
+
 /*------------------------------------------------------*\
   #FEATURES-SECTION
 \*------------------------------------------------------*/
 
+
+
 .features-list  {
-  margin: 0 auto;
+  margin: 0 auto; 
   margin-bottom: 4.4rem; 
-  max-width: 34rem;
- 
+  max-width: 40rem;
+  
 }
 
 
@@ -107,7 +133,7 @@
   width: 100%; 
   padding: 1rem 0; 
   border-bottom: 1px solid lighten($grayishBlue, 25%);
-
+  
   &:hover {
     color: $primarySoftRed;
   }
@@ -138,20 +164,20 @@
 }
 
 
+
 //ovo bi trebalo na article element
-.features-tab {
-  
-    display: flex; 
-    align-items: center;
-    justify-content: space-between;
-    flex-direction: column; 
-
+.feature-tab {
+   display: flex; 
+   flex-direction: column; 
+   align-items: center; 
+   justify-content: space-between;
 }
-
 
 
 .features-tab__image {
   width: 100%; 
+  max-width: 35rem;
+  height: 100%;
   padding: 0 2rem; 
   z-index: 2; 
 }
@@ -161,9 +187,19 @@
   #EXTENSIONS-SECTION
 \*------------------------------------------------------*/
 
-  .extension-list {
-    @extend .flex-center--col; 
-    margin-top: 2rem; 
+  .extension-section {
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+  }
+
+
+  .extension-list { 
+    margin-top: 2rem;    
+    display: flex; 
+    flex-direction: column; 
+    justify-content: space-between;
+    align-items: center;
   }
 
 
@@ -177,7 +213,7 @@
    margin-bottom: 3.5rem;  
    border-radius: 0 0 0.5rem 0.5rem; 
    box-shadow: 0px 5px 5px 4px  lighten($grayishBlue, 35%);
-  
+   transition: margin 500ms ease-out; 
  }
 
  
@@ -211,7 +247,7 @@
   margin-top: 2.75rem; 
   margin-bottom: 1rem; 
   width: 100%; 
-  max-width: 34rem; //desktop size
+  max-width: 34rem; 
   
 }
 
@@ -222,6 +258,10 @@
   font-size: inherit;
   position: relative;
   cursor: pointer; 
+
+  &:hover, &:focus {
+    color: $primarySoftRed;
+  }
 }
 
 .description-list__arrow {
@@ -234,11 +274,9 @@
 
 
 
-//This is applied when user clcks on a question
-.description-list__arrow--expanded {
-  
-  transform: translateY(-50%) scale(1, -1); 
-
+//This is applied when user clicks on a question
+.description-list__arrow--expanded { 
+  transform: translateY(-50%) rotateZ(180deg); 
   .arrow-stroke {
     stroke: $primarySoftRed;
   }
@@ -248,6 +286,16 @@
 
 .description-list__answer {
   line-height: 2;
+  opacity: 0;  
+  max-height: 0; 
+  transition: all 250ms; 
+
+}
+
+
+.description-list__answer--expanded { 
+  opacity: 1;
+  max-height: 40rem; 
   padding-top: 2.5rem;
   padding-bottom: 0.5rem; 
 }
@@ -262,10 +310,14 @@
   background-color: $primarySoftBlue; 
   height: 22.5rem; 
   padding-top: 4.5rem; 
+  display: flex; 
+  flex-direction: column; 
+  align-items: center;
 }
 
 .yeah-right {
  text-transform: uppercase; 
+ text-align: center;
  color: $defaultWhite;
  font-size: 0.8rem; 
  font-weight: 400;
@@ -275,7 +327,11 @@
 
 .form {
   width: 100%; 
-   
+  display: flex; 
+  flex-direction: column; 
+  align-items: center;
+  justify-content: space-between;
+ 
 }
 
 

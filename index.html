@@ -15,7 +15,8 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./styles/main.css" />
-    <script src="app.js" defer></script>
+    <script src="./scripts/descriptionList.js" defer></script>
+    <script src="./scripts/app.js" type="module" defer></script>
     <title>Bookmarks Landing Page</title>
   </head>
   <body>
@@ -30,7 +31,7 @@
               src="./images/logo-bookmark.svg"
               alt="bookmark page logo"
             />
-            <button id="mobile-menu-btn">
+            <button id="mobile-menu-btn" class="hamburger">
               <img
                 id="menu-btn-img"
                 src="./images/icon-hamburger.svg"
@@ -39,18 +40,18 @@
             </button>
           </div>
           <!--Main navigation links-->
-          <ul id="main-nav-list" class="main-nav__list hidden">
+          <ul id="main-nav-list" class="main-nav__list">
             <li class="main-nav__item">
-              <a href="" class="nav__link">Features</a>
+              <a href="" class="nav__link nav__link--main">Features</a>
             </li>
             <li class="main-nav__item">
-              <a href="" class="nav__link">Pricing</a>
+              <a href="" class="nav__link nav__link--main">Pricing</a>
             </li>
             <li class="main-nav__item">
-              <a href="" class="nav__link">Contact</a>
+              <a href="" class="nav__link nav__link--main">Contact</a>
             </li>
             <li class="main-nav__item">
-              <a href="" class="nav__link btn--login">Login</a>
+              <a href="" class="nav__link nav__link--main btn--login">Login</a>
             </li>
           </ul>
           <!--Social media links in the header-->
@@ -82,30 +83,34 @@
       <main class="main-container">
         <!--HERO SECTION-->
         <section class="hero-section content-section">
-          <div class="image-container bg-pattern">
+          <div class="image-container image-container--hero bg-pattern">
             <img
               class="content-image"
               src="./images/illustration-hero.svg"
               alt="hero image"
             />
           </div>
-          <div class="content flex-position">
-            <h1 class="content__title text-align">A Simple Bookmark Manager</h1>
+          <div class="flex-position title-container">
+            <div class="content--responsive">
+              <h1 class="content__title text-align">A Simple Bookmark Manager</h1>
             <p class="content__text text-align">
               A clean and simple interface to organize your favourite websites.
               Open a new browser tab and see your sites load instantly. Try it
               for free.
             </p>
-            <div class="content__controls">
+            </div>
+            <div class="controls__wrapper">
+               <div class="content__controls">
               <button class="btn btn--default btn--medium">
                 Get it on Chrome
               </button>
               <button class="btn btn--medium">Get it on Firefox</button>
             </div>
+            </div>  
           </div>
         </section>
         <!--FEATURES SECTION-->
-        <section class="content-section">
+        <section class="content-section content-section--mrb15">
           <div class="content content--wider flex-center--col">
             <h2 class="content__subtitle">Features</h2>
             <p class="content__text">
@@ -131,8 +136,8 @@
               </li>
             </ul>
           </nav>
-          <article class="flex-center--col desktop-flex--row">
-            <div class="image-container bg-pattern--left">
+          <article class="feature-tab">
+            <div class="image-container image-container--article bg-pattern--left">
               <img
                 class="features-tab__image"
                 src="./images/illustration-features-tab-1.svg"
@@ -143,7 +148,7 @@
               <h3 class="content__subtitle text-align">
                 Bookmark in one click
               </h3>
-              <p class="content__text text-align">
+              <p class="content__text content__text--limited text-align">
                 Organize your bookmarks however you like. Our simple
                 drag-and-drop interface gives you complete control over how you
                 manage your favourite sites.
@@ -152,7 +157,7 @@
             </div>
             <div class="content flex-center--col" style="display: none">
               <h3 class="content__subtitle">Intelligent search</h3>
-              <p class="content__text">
+              <p class="content__text content__text--limited ">
                 Our powerful search feature will help you find saved sites in no
                 time at all. No need to trawl through all of your bookmarks.
               </p>
@@ -160,7 +165,7 @@
             </div>
             <div class="content flex-center--col" style="display: none">
               <h3 class="content__subtitle">Share your bookmarks</h3>
-              <p class="content__text">
+              <p class="content__text content__text--limited ">
                 Easily share your bookmarks and collections with others. Create
                 a shareable link that you can send at the click of a button.
               </p>
@@ -169,7 +174,7 @@
           </article>
         </section>
         <!--EXTENSIONS SECTION-->
-        <section class="content-section">
+        <section class="content-section extension-section">
           <div class="content flex-center--col">
             <h2 class="content__subtitle">Download the extension</h2>
             <p class="content__text">
@@ -219,7 +224,7 @@
         <!--FAQ SECTION-->
         <section class="content-section flex-center--col">
           <div class="content">
-            <h2 class="content__subtitle">Frequnetly Asked Questions</h2>
+            <h2 class="content__subtitle">Frequently Asked Questions</h2>
             <p class="content__text">
               Here are some of our FAQs. If you have any other questions you’d
               like answered please feel free to email us.
@@ -252,7 +257,6 @@
             <dd class="bottom-line">
               <p
                 id="faq-answer1"
-                style="display: none"
                 class="description-list__answer"
               >
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce
@@ -287,7 +291,6 @@
               <p
                 id="faq-answer2"
                 class="description-list__answer"
-                style="display: none"
               >
                 Vivamus luctus eros aliquet convallis ultricies. Mauris augue
                 massa, ultricies non ligula. Suspendisse imperdiet. Vivamus
@@ -324,7 +327,6 @@
               <p
                 id="faq-answer3"
                 class="description-list__answer"
-                style="display: none"
               >
                 Sed consectetur quam id neque fermentum accumsan. Praesent
                 luctus vestibulum dolor, ut condimentum urna vulputate eget.
@@ -359,7 +361,6 @@
               <p
                 id="faq-answer4"
                 class="description-list__answer"
-                style="display: none"
               >
                 Integer condimentum ipsum id imperdiet finibus. Vivamus in
                 placerat mi, at euismod dui. Aliquam vitae neque eget nisl
@@ -378,8 +379,7 @@
                 Stay up-to-date with what we're doing
               </h2>
             </div>
-
-            <form action="" class="form flex-center--col">
+            <form action="" class="form">
               <input
                 class="form__input"
                 type="email"
@@ -394,13 +394,13 @@
       </main>
       <!--Footer-->
       <footer>
-        <section class="footer-section flex-center--col">
-          <img src="./images/logo-bookmark2.svg" alt="logo" />
-          <nav>
-            <ul class="footer-nav-list flex-center--col">
-              <li><a href="#" class="nav__link">Features</a></li>
-              <li><a href="#" class="nav__link">Pricing</a></li>
-              <li><a href="#" class="nav__link">Contact</a></li>
+        <section class="footer-section">
+          <nav class="footer-nav">
+             <img src="./images/logo-bookmark2.svg" alt="logo" />
+            <ul class="footer-nav-list">
+              <li><a href="#" class="nav__link footer-link">Features</a></li>
+              <li><a href="#" class="nav__link footer-link">Pricing</a></li>
+              <li><a href="#" class="nav__link footer-link">Contact</a></li>
             </ul>
           </nav>
           <ul class="social-list">
@@ -412,8 +412,7 @@
                     fill="#FFF"
                     fill-rule="evenodd"
                     d="M22.675 0H1.325C.593 0 0 .593 0 1.325v21.351C0 23.407.593 24 1.325 24H12.82v-9.294H9.692v-3.622h3.128V8.413c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.463.099 2.795.143v3.24l-1.918.001c-1.504 0-1.795.715-1.795 1.763v2.313h3.587l-.467 3.622h-3.12V24h6.116c.73 0 1.323-.593 1.323-1.325V1.325C24 .593 23.407 0 22.675 0z"
-                  /></svg
-              ></a>
+                  /></svg ></a>
             </li>
             <li>
               <a class="flex-center social-link" href="#"
@@ -423,21 +422,10 @@
                     fill="#FFF"
                     fill-rule="evenodd"
                     d="M24 2.557a9.83 9.83 0 0 1-2.828.775A4.932 4.932 0 0 0 23.337.608a9.864 9.864 0 0 1-3.127 1.195A4.916 4.916 0 0 0 16.616.248c-3.179 0-5.515 2.966-4.797 6.045A13.978 13.978 0 0 1 1.671 1.149a4.93 4.93 0 0 0 1.523 6.574 4.903 4.903 0 0 1-2.229-.616c-.054 2.281 1.581 4.415 3.949 4.89a4.935 4.935 0 0 1-2.224.084 4.928 4.928 0 0 0 4.6 3.419A9.9 9.9 0 0 1 0 17.54a13.94 13.94 0 0 0 7.548 2.212c9.142 0 14.307-7.721 13.995-14.646A10.025 10.025 0 0 0 24 2.557z"
-                  /></svg
-              ></a>
+                  /></svg></a>
             </li>
           </ul>
         </section>
-        <p class="attribution">
-          Challenge by
-          <a
-            class="attribution__link"
-            href="https://www.frontendmentor.io?ref=challenge"
-            target="_blank"
-            >Frontend Mentor</a
-          >. <br />
-          Coded by <a class="attribution__link" href="#">Goran Turkalj</a>.
-        </p>
       </footer>
     </div>
   </body>

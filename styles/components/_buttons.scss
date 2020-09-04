@@ -65,5 +65,36 @@
   padding-bottom: 0.6rem; 
   border: 2px solid white; 
   border-radius: 0.3rem; 
+
+   &:hover, &:focus {
+    background-color: $defaultWhite; 
+    border: 2px solid $primarySoftRed;
+    color: $primarySoftRed;
+  }
 }
 
+
+@media only screen and (min-width: 41.5rem) {
+
+   .btn--important {
+     width: 7.75rem; 
+     margin-bottom: 1rem; 
+   }
+}
+
+
+
+
+@media only screen and (min-width: 50rem) {
+
+  .btn--login {
+  
+  background-color: $primarySoftRed;
+  color: $navLinkGrey;
+  padding-top: 0.6rem; 
+  padding-bottom: 0.6rem; 
+  border: 2px solid white; 
+  border-radius: 0.3rem; 
+  }
+
+}
