@@ -67,7 +67,7 @@
   border-radius: 0.3rem; 
 
    &:hover, &:focus {
-    background-color: $defaultWhite; 
+    background-color: $defaultWhite;  
     border: 2px solid $primarySoftRed;
     color: $primarySoftRed;
   }
@@ -90,11 +90,12 @@
   .btn--login {
   
   background-color: $primarySoftRed;
-  color: $navLinkGrey;
-  padding-top: 0.6rem; 
-  padding-bottom: 0.6rem; 
-  border: 2px solid white; 
-  border-radius: 0.3rem; 
+  color: $defaultWhite;
+  font-weight: 500; 
+  width: 7rem; 
+  min-height: 2.5rem; 
+  padding: 0.7rem 0; 
+  border-radius: 0.5rem; 
   }
 
 }

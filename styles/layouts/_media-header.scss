@@ -1,8 +1,10 @@
+
+//800px
 @media only screen and (min-width: 50rem) {
 
    .main-nav {
-      align-items: center;
-     
+      align-items: center; 
+      transition: none; 
     }
     
    .main-nav__list {
@@ -24,16 +26,27 @@
 
   .main-nav__item { 
    border-bottom: none;
-   padding: 0; 
    height: 100%;
+   width: auto; 
+   padding: 0 1.3rem; 
+   flex-direction: row; 
    
   }
 
+   .nav__link {
+      font-size: 0.80rem;
+      letter-spacing: 1px; 
+   }
+
+
+
   .nav__link--main {
-      color: $grayishBlue; 
-      font-size: 0.95rem; 
-      margin: 0 1rem; 
+      color: $veryDarkBlue;
+      width: auto; 
   }
+
+
+
   
   .hamburger {
      display: none;
