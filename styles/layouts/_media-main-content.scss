@@ -1,3 +1,10 @@
+@media only screen and (min-width: 24rem) {
+
+  .image-container--article {
+    margin-bottom: 9rem; 
+  }
+}
+
 
 
 @media only screen and (min-width: 31.25rem) {
@@ -9,6 +16,11 @@
   .image-container {
    margin-bottom: 7rem;
    }
+  
+   .image-container--article {
+    margin-bottom: 9rem; 
+  }
+  
 
 }
 
@@ -25,9 +37,6 @@
     }
   
 }
-
-
-
 
 
 //664px
@@ -225,13 +234,18 @@
 
 
     .image-container--article {
-      max-width: 44.5rem; 
-      height: 21.75rem;
+      max-width: 43.5rem; 
       justify-content: flex-end;
+      //height: 22rem;
+
+      
     }
 
     .features-tab__image {
       padding: 0; 
+      width: auto;
+     
+      
     }
 }
 

@@ -35,9 +35,7 @@ navLinksList.addEventListener("click", navLinksClickHandler);
 
 
 function navLinksClickHandler(event){
-
   if(event.target.tagName === "A") closeMobileNav(); 
-
 }
 
 

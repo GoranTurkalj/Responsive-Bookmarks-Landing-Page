@@ -1,0 +1,19 @@
+{
+  "name": "responsive-bookmarks-practice",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GoranTurkalj/Responsive-Bookmarks-Landing-Page.git"
+  },
+  "author": "Goran Turkalj",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/GoranTurkalj/Responsive-Bookmarks-Landing-Page/issues"
+  },
+  "homepage": "https://github.com/GoranTurkalj/Responsive-Bookmarks-Landing-Page#readme"
+}
