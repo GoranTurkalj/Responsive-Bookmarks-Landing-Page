@@ -1,4 +1,4 @@
-import { calcWindowWidth } from "./help.js";
+import { calcWindowWidth, emailValidation } from "./help.js";
 
 let windowWidth = null;
 
@@ -12,6 +12,7 @@ const mainNav = document.getElementById("main-nav");
 const logoImg = document.getElementById("logo");
 const navLinksList = document.getElementById("main-nav-list");
 const navSocialLinksList = document.getElementById("main-nav-social");
+
 
 
 //Refers to the hamburger menu control button for mobile view
@@ -78,3 +79,9 @@ function closeMobileNav() {
   navSocialLinksList.classList.add("hidden");
   body.style.overflow = "auto";
 }
+
+
+
+//Email validation 
+
+form.addEventListener("submit", emailValidation); 

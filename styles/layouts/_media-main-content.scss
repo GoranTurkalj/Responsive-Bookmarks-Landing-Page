@@ -142,6 +142,7 @@
 
    .form {
     width: 28rem; 
+    max-width: 28rem; 
     display: flex; 
     flex-direction: row; 
     align-items: center;
@@ -151,13 +152,29 @@
 
    .form__input {
    
-   width: 100%;
+   width: 100%; 
    max-width: 19.5rem; 
    border-radius: $primaryRadius; 
-   padding: 0 1.5rem;
    margin-bottom: 1rem; 
   
   }
+
+  .error-icon {
+    left: 62%; 
+    top: 19%; 
+  }
+
+  .error-container {
+    top: 104%; 
+    transform: translateY(-220%); 
+    
+  }
+
+  
+  .error-container--visible {
+    transform: translateY(-88%);
+  }
+
 
 
 }

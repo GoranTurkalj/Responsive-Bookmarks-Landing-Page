@@ -384,21 +384,27 @@
         </section>
         <!--CONTACT SECTION-->
         <section id="contact" class="contact-section">
-          <div class="content">
+          <div class="content flex-center--col">
             <div class="flex-center--col">
               <span class="yeah-right">35,000+ already joined</span>
               <h2 class="content__subtitle content__subtitle--light">
                 Stay up-to-date with what we're doing
               </h2>
             </div>
-            <form action="" class="form">
-              <input
+            <form id="form" action="#" class="form">
+                <input
                 class="form__input"
-                type="email"
                 name="email"
                 id="email"
                 placeholder="Enter your email address"
               />
+              <div id="error-icon" class="error-icon">
+                <img src="./images/icon-error.svg" alt="error icon">
+              </div>
+              <div id="error" class="error-container">
+                 <p>Whoops, make sure it's an email</p>
+              </div>
+             
               <button class="btn btn--wide btn--important">Contact Us</button>
             </form>
           </div>

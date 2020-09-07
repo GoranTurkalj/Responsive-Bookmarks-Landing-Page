@@ -580,6 +580,7 @@ body {
 
 .form {
   width: 100%;
+  max-width: 19.5rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -593,6 +594,7 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  position: relative;
 }
 
 .form__input {
@@ -600,9 +602,14 @@ body {
   background-color: white;
   width: 100%;
   max-width: 19.5rem;
+  border: 2px solid white;
   border-radius: 0.4rem;
-  padding: 0 1.5rem;
   margin-bottom: 1rem;
+  padding: 0 1.5rem;
+  padding-right: 4rem;
+  z-index: 2;
+  -webkit-transition: all 300ms;
+  transition: all 300ms;
 }
 
 .form__input::-webkit-input-placeholder {
@@ -627,6 +634,66 @@ body {
   color: #9194a1;
   opacity: 0.5;
   font-size: 0.9rem;
+}
+
+.form__input--invalid {
+  border: 2px solid #fa5757;
+  margin-bottom: 2.5rem;
+}
+
+.error-icon {
+  position: absolute;
+  z-index: 3;
+  left: 85%;
+  top: 11%;
+  opacity: 0;
+  -webkit-transition: opacity 300ms;
+  transition: opacity 300ms;
+}
+
+.error-icon--visible {
+  opacity: 1;
+}
+
+.error-container {
+  position: absolute;
+  background-color: #fa5757;
+  width: 100%;
+  max-width: 19.5rem;
+  height: 1.5rem;
+  top: 32.5%;
+  -webkit-transition: all 300ms;
+  transition: all 300ms;
+  opacity: 0;
+  border: 2px solid #fa5757;
+  border-radius: 0.4rem;
+  color: white;
+  font-size: 0.6rem;
+  font-style: italic;
+  padding-left: 0.7rem;
+  -webkit-transform: translateY(-100%);
+          transform: translateY(-100%);
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.error-container p {
+  height: -webkit-min-content;
+  height: -moz-min-content;
+  height: min-content;
+  line-height: 1.5rem;
+  letter-spacing: 1px;
+}
+
+.error-container--visible {
+  -webkit-transform: translateY(0%);
+          transform: translateY(0%);
+  border-radius: 0 0 0.4rem 0.4rem;
+  opacity: 1;
 }
 
 @media only screen and (min-width: 24rem) {
@@ -737,6 +804,7 @@ body {
   \*------------------------------------------------------*/
   .form {
     width: 28rem;
+    max-width: 28rem;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -752,8 +820,20 @@ body {
     width: 100%;
     max-width: 19.5rem;
     border-radius: 0.4rem;
-    padding: 0 1.5rem;
     margin-bottom: 1rem;
+  }
+  .error-icon {
+    left: 62%;
+    top: 19%;
+  }
+  .error-container {
+    top: 104%;
+    -webkit-transform: translateY(-220%);
+            transform: translateY(-220%);
+  }
+  .error-container--visible {
+    -webkit-transform: translateY(-88%);
+            transform: translateY(-88%);
   }
 }
 
