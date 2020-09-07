@@ -15,6 +15,8 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./styles/main.css" />
+    <!--Animate on scroll library-->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <script src="./scripts/descriptionList.js" defer></script>
     <script src="./scripts/featuresTab.js" defer></script>
     <script src="./scripts/app.js" type="module" defer></script>
@@ -86,7 +88,7 @@
       <main class="main-container">
         <!--HERO SECTION-->
         <section class="hero-section content-section">
-          <div class="image-container image-container--hero bg-pattern">
+          <div class="image-container image-container--hero bg-pattern" data-aos="fade-down">
             <img
               class="content-image"
               src="./images/illustration-hero.svg"
@@ -95,10 +97,10 @@
           </div>
           <div class="flex-position title-container">
             <div class="content--responsive">
-              <h1 class="content__title text-align">
+              <h1 class="content__title text-align" data-aos="slide-down">
                 A Simple Bookmark Manager
               </h1>
-              <p class="content__text text-align">
+              <p class="content__text text-align" data-aos="fade" data-aos-delay="300">
                 A clean and simple interface to organize your favourite
                 websites. Open a new browser tab and see your sites load
                 instantly. Try it for free.
@@ -106,10 +108,10 @@
             </div>
             <div class="controls__wrapper">
               <div class="content__controls">
-                <button class="btn btn--default btn--medium">
+                <button class="btn btn--default btn--medium" data-aos="fade" data-aos-delay="500">
                   Get it on Chrome
                 </button>
-                <button class="btn btn--medium">Get it on Firefox</button>
+                <button class="btn btn--medium" data-aos="fade" data-aos-delay="500">Get it on Firefox</button>
               </div>
             </div>
           </div>
@@ -152,6 +154,7 @@
           <article id="feature-tab-container" class="feature-tab">
             <div
               class="image-container image-container--article bg-pattern--left"
+              data-aos="slide-up"
             >
               <img
                 id="features-img"
@@ -160,7 +163,7 @@
                 alt="features illustration"
               />
             </div>
-            <div data-tab="tab-1" class="content flex-position">
+            <div data-tab="tab-1" class="content flex-position" data-aos="slide-up">
               <h3 class="content__subtitle text-align">
                 Bookmark in one click
               </h3>
@@ -175,6 +178,7 @@
               data-tab="tab-2"
               class="content flex-position"
               style="display: none"
+            
             >
               <h3 class="content__subtitle text-align">Intelligent search</h3>
               <p class="content__text content__text--limited text-align">
@@ -187,6 +191,7 @@
               data-tab="tab-3"
               class="content flex-position"
               style="display: none"
+              
             >
               <h3 class="content__subtitle text-align">Share your bookmarks</h3>
               <p class="content__text content__text--limited text-align">
@@ -207,7 +212,7 @@
             </p>
           </div>
           <ul class="extension-list">
-            <li class="extension-card">
+            <li class="extension-card" data-aos="fade-up" data-aos-delay="100">
               <img src="./images/logo-chrome.svg" alt="chrome extension logo" />
               <div class="extension-card__description">
                 <h4 class="extension-card__title">Add to Chrome</h4>
@@ -218,7 +223,7 @@
                 Add & Install Extension
               </button>
             </li>
-            <li class="extension-card">
+            <li class="extension-card" data-aos="fade-up" data-aos-delay="200">
               <img
                 src="./images/logo-firefox.svg"
                 alt="firefox extension logo"
@@ -232,7 +237,7 @@
                 Add & Install Extension
               </button>
             </li>
-            <li class="extension-card">
+            <li class="extension-card" data-aos="fade-up" data-aos-delay="300">
               <img src="./images/logo-opera.svg" alt="opera extension logo" />
               <div class="extension-card__description">
                 <h4 class="extension-card__title">Add to Opera</h4>
@@ -452,5 +457,12 @@
         </section>
       </footer>
     </div>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 1500,
+      });
+      AOS.refresh(); 
+    </script>
   </body>
 </html>

@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/GoranTurkalj/Responsive-Bookmarks-Landing-Page/issues"
   },
-  "homepage": "https://github.com/GoranTurkalj/Responsive-Bookmarks-Landing-Page#readme"
+  "homepage": "https://github.com/GoranTurkalj/Responsive-Bookmarks-Landing-Page#readme",
+  "dependencies": {
+    "aos": "^3.0.0-beta.6"
+  }
 }

@@ -1,4 +1,6 @@
+
 import { calcWindowWidth, emailValidation } from "./help.js";
+
 
 let windowWidth = null;
 
@@ -23,6 +25,7 @@ const menuBtnImg = document.getElementById("menu-btn-img");
 let menuOpened = false;
 
 window.addEventListener("resize", (event) => {
+ 
   windowWidth = calcWindowWidth();
   if (menuOpened && windowWidth >= 800) {
     
