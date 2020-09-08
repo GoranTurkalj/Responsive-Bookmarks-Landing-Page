@@ -1,27 +1,34 @@
 
 // DESCRIPTION LIST CONTROL XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
 
-const dList = document.getElementById("d-list");
+const dtElements = document.querySelectorAll("dt"); 
+
+  
 let currentQuestion = null;
 
-
+  
 //FAQ handler
  function FAQHandler(event) {
-    if (event.target.tagName === "BUTTON") {
-        if (currentQuestion && currentQuestion === event.target) {
+        const scrollBefore = window.scrollY; 
+        console.log(scrollBefore);
+        const q = event.currentTarget; 
+              
+        if (currentQuestion && currentQuestion === q) {
             determineAction(currentQuestion);
-        } else if (currentQuestion && currentQuestion !== event.target) {
+        } else if (currentQuestion && currentQuestion !== q) {
             //then I want to close the current answer first
             hideAnswer(currentQuestion);
             //then assign the new currentQuestion
-            currentQuestion = event.target;
+            currentQuestion = q;
             //do the action
             determineAction(currentQuestion);
         } else if (!currentQuestion) {
-            currentQuestion = event.target;
+            currentQuestion = q;
             determineAction(currentQuestion);
         }
-    }
+      const scrollAfter = window.scrollY; 
+      console.log(scrollAfter); 
+    
 }
 
 //determines if answer should open or close
@@ -59,4 +66,10 @@ function determineAction(question) {
     selectAnswer(question).classList.remove("description-list__answer--expanded");
 }
 
-dList.addEventListener("click", FAQHandler);
+
+
+for(const el of dtElements) {
+    el.addEventListener("click", FAQHandler); 
+}
+
+

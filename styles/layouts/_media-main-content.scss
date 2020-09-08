@@ -3,6 +3,10 @@
   .image-container--article {
     margin-bottom: 9rem; 
   }
+
+  .question-text {
+    max-width: fit-content;
+  }
 }
 
 
@@ -179,6 +183,20 @@
 
 }
 
+
+//800px
+@media only screen and (min-width: 50rem) { 
+
+  .description-list {
+    dt:first-of-type {
+      border-top: 1px solid $borderAccentColor;  
+      padding-top: 2rem;  
+    }
+  }
+}
+
+
+
 //960px
 @media only screen and (min-width: 60rem) {
 
@@ -216,6 +234,18 @@
   }
 
 
+/*------------------------------------------------------*\
+#FAQ-SECTION
+\*------------------------------------------------------*/
+
+  .question-text {
+    font-size: $normalTxtDesk;
+  }
+
+  
+  .description-list__answer {
+    font-size: 1.05rem;
+  }
 }
 
 
@@ -253,7 +283,7 @@
     .image-container--article {
       max-width: 43.5rem; 
       justify-content: flex-end;
-      //height: 22rem;
+      
 
       
     }

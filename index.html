@@ -17,7 +17,7 @@
     <link rel="stylesheet" href="./styles/main.css" />
     <!--Animate on scroll library-->
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <script src="./scripts/descriptionList.js" defer></script>
+    <script src="./scripts/accordion.js" defer></script>
     <script src="./scripts/featuresTab.js" defer></script>
     <script src="./scripts/app.js" type="module" defer></script>
     <title>Bookmarks Landing Page</title>
@@ -58,7 +58,10 @@
             </li>
           </ul>
           <!--Social media links in the header-->
-          <ul id="main-nav-social" class="social-list social-list--main-nav hidden">
+          <ul
+            id="main-nav-social"
+            class="social-list social-list--main-nav hidden"
+          >
             <li>
               <a class="flex-center social-link" href="#"
                 ><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24">
@@ -86,7 +89,10 @@
       <main class="main-container">
         <!--HERO SECTION-->
         <section class="hero-section content-section">
-          <div class="image-container image-container--hero bg-pattern" data-aos="fade-down">
+          <div
+            class="image-container image-container--hero bg-pattern"
+            data-aos="fade-down"
+          >
             <img
               class="content-image"
               src="./images/illustration-hero.svg"
@@ -95,10 +101,18 @@
           </div>
           <div class="flex-position title-container">
             <div class="content--responsive">
-              <h1 class="content__title text-align" data-aos="fade-down" data-aos-delay="200">
+              <h1
+                class="content__title text-align"
+                data-aos="fade"
+                data-aos-delay="200"
+              >
                 A Simple Bookmark Manager
               </h1>
-              <p class="content__text text-align" data-aos="fade" data-aos-delay="300">
+              <p
+                class="content__text text-align"
+                data-aos="fade"
+                data-aos-delay="300"
+              >
                 A clean and simple interface to organize your favourite
                 websites. Open a new browser tab and see your sites load
                 instantly. Try it for free.
@@ -106,10 +120,20 @@
             </div>
             <div class="controls__wrapper">
               <div class="content__controls">
-                <button class="btn btn--default btn--medium" data-aos="fade" data-aos-delay="500">
+                <button
+                  class="btn btn--default btn--medium"
+                  data-aos="fade"
+                  data-aos-delay="500"
+                >
                   Get it on Chrome
                 </button>
-                <button class="btn btn--medium" data-aos="fade" data-aos-delay="500">Get it on Firefox</button>
+                <button
+                  class="btn btn--medium"
+                  data-aos="fade"
+                  data-aos-delay="500"
+                >
+                  Get it on Firefox
+                </button>
               </div>
             </div>
           </div>
@@ -161,7 +185,11 @@
                 alt="features illustration"
               />
             </div>
-            <div data-tab="tab-1" class="content flex-position" data-aos="slide-up">
+            <div
+              data-tab="tab-1"
+              class="content flex-position"
+              data-aos="slide-up"
+            >
               <h3 class="content__subtitle text-align">
                 Bookmark in one click
               </h3>
@@ -176,7 +204,6 @@
               data-tab="tab-2"
               class="content flex-position"
               style="display: none"
-            
             >
               <h3 class="content__subtitle text-align">Intelligent search</h3>
               <p class="content__text content__text--limited text-align">
@@ -189,7 +216,6 @@
               data-tab="tab-3"
               class="content flex-position"
               style="display: none"
-              
             >
               <h3 class="content__subtitle text-align">Share your bookmarks</h3>
               <p class="content__text content__text--limited text-align">
@@ -201,7 +227,7 @@
           </article>
         </section>
         <!--EXTENSIONS SECTION-->
-        <section class="content-section extension-section">
+        <section class="content-section extension-section" data-aos="fade">
           <div class="content flex-center--col">
             <h2 class="content__subtitle">Download the extension</h2>
             <p class="content__text">
@@ -257,131 +283,72 @@
               like answered please feel free to email us.
             </p>
           </div>
+          <!--Accordion--> 
           <dl id="d-list" class="description-list content">
-            <dt>
-              <button
-                aria-expanded="false"
-                aria-controls="faq-answer1"
-                class="description-list__question"
-              >
-                What is Bookmark?
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="18"
-                  height="12"
-                  class="description-list__arrow"
-                >
-                  <path
-                    class="arrow-stroke"
-                    fill="none"
-                    stroke="#5267DF"
-                    stroke-width="3"
-                    d="M1 1l8 8 8-8"
-                  />
-                </svg>
-              </button>
-            </dt>
-            <dd class="bottom-line">
-              <p id="faq-answer1" class="description-list__answer">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce
-                tincidunt justo eget ultricies fringilla. Phasellus blandit
-                ipsum quis quam ornare mattis
-              </p>
-            </dd>
-            <dt>
-              <button
-                aria-expanded="false"
-                aria-controls="faq-answer2"
-                class="description-list__question"
-              >
-                How can I request a new browser?
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="18"
-                  height="12"
-                  class="description-list__arrow"
-                >
-                  <path
-                    class="arrow-stroke"
-                    fill="none"
-                    stroke="#5267DF"
-                    stroke-width="3"
-                    d="M1 1l8 8 8-8"
-                  />
-                </svg>
-              </button>
-            </dt>
-            <dd class="bottom-line">
-              <p id="faq-answer2" class="description-list__answer">
-                Vivamus luctus eros aliquet convallis ultricies. Mauris augue
-                massa, ultricies non ligula. Suspendisse imperdiet. Vivamus
-                luctus eros aliquet convallis ultricies. Mauris augue massa,
-                ultricies non ligula. Suspendisse imperdie tVivamus luctus eros
-                aliquet convallis ultricies. Mauris augue massa, ultricies non
-                ligula. Suspendisse imperdiet.
-              </p>
-            </dd>
-            <dt>
-              <button
-                aria-expanded="false"
-                aria-controls="faq-answer3"
-                class="description-list__question"
-              >
-                Is there a mobile app?
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="18"
-                  height="12"
-                  class="description-list__arrow"
-                >
-                  <path
-                    class="arrow-stroke"
-                    fill="none"
-                    stroke="#5267DF"
-                    stroke-width="3"
-                    d="M1 1l8 8 8-8"
-                  />
-                </svg>
-              </button>
-            </dt>
-            <dd class="bottom-line">
-              <p id="faq-answer3" class="description-list__answer">
-                Sed consectetur quam id neque fermentum accumsan. Praesent
-                luctus vestibulum dolor, ut condimentum urna vulputate eget.
-                Cras in ligula quis est pharetra mattis sit amet pharetra purus.
-                Sed sollicitudin ex et ultricies bibendum.
-              </p>
-            </dd>
-            <dt>
-              <button
-                aria-expanded="false"
-                aria-controls="faq-answer4"
-                class="description-list__question"
-              >
-                What about other Chromium browsers?
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="18"
-                  height="12"
-                  class="description-list__arrow"
-                >
-                  <path
-                    class="arrow-stroke"
-                    fill="none"
-                    stroke="#5267DF"
-                    stroke-width="3"
-                    d="M1 1l8 8 8-8"
-                  />
-                </svg>
-              </button>
-            </dt>
-            <dd class="bottom-line">
-              <p id="faq-answer4" class="description-list__answer">
-                Integer condimentum ipsum id imperdiet finibus. Vivamus in
-                placerat mi, at euismod dui. Aliquam vitae neque eget nisl
-                gravida pellentesque non ut velit.
-              </p>
-            </dd>
+              <dt aria-expanded="false" aria-controls="faq-answer1">
+                <button  class="description-list__question">
+                  <span class="question-text"> What is Bookmark?</span>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="18" height="12" class="description-list__arrow">
+                    <path class="arrow-stroke" fill="none" stroke="#5267DF" stroke-width="3" d="M1 1l8 8 8-8" />
+                  </svg>
+                </button>
+              </dt>
+              <dd class="bottom-line">
+                <p id="faq-answer1" class="description-list__answer">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce
+                  tincidunt justo eget ultricies fringilla. Phasellus blandit
+                  ipsum quis quam ornare mattis
+                </p>
+              </dd>
+              <dt aria-expanded="false" aria-controls="faq-answer2">
+                <button  class="description-list__question">
+                  <span class="question-text"> How can I request a new browser?</span>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="18" height="12" class="description-list__arrow">
+                    <path class="arrow-stroke" fill="none" stroke="#5267DF" stroke-width="3" d="M1 1l8 8 8-8" />
+                  </svg>
+                </button>
+              </dt>
+              <dd class="bottom-line">
+                <p id="faq-answer2" class="description-list__answer">
+                  Vivamus luctus eros aliquet convallis ultricies. Mauris augue
+                  massa, ultricies non ligula. Suspendisse imperdiet. Vivamus
+                  luctus eros aliquet convallis ultricies. Mauris augue massa,
+                  ultricies non ligula. Suspendisse imperdie tVivamus luctus
+                  eros aliquet convallis ultricies. Mauris augue massa,
+                  ultricies non ligula. Suspendisse imperdiet.
+                </p>
+              </dd>
+              <dt aria-expanded="false" aria-controls="faq-answer3">
+                <button  class="description-list__question">
+                  <span class="question-text">Is there a mobile app?</span>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="18" height="12" class="description-list__arrow">
+                    <path class="arrow-stroke" fill="none" stroke="#5267DF" stroke-width="3" d="M1 1l8 8 8-8" />
+                  </svg>
+                </button>
+              </dt>
+              <dd class="bottom-line">
+                <p id="faq-answer3" class="description-list__answer">
+                  Sed consectetur quam id neque fermentum accumsan. Praesent
+                  luctus vestibulum dolor, ut condimentum urna vulputate eget.
+                  Cras in ligula quis est pharetra mattis sit amet pharetra
+                  purus. Sed sollicitudin ex et ultricies bibendum.
+                </p>
+              </dd>
+              <dt aria-expanded="false" aria-controls="faq-answer4">
+                <button  class="description-list__question">
+                 <span class="question-text"> What about other Chromium browsers?</span>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="18" height="12" class="description-list__arrow">
+                    <path class="arrow-stroke" fill="none" stroke="#5267DF" stroke-width="3" d="M1 1l8 8 8-8" />
+                  </svg>
+                </button>
+              </dt>
+              <dd class="bottom-line">
+                <p id="faq-answer4" class="description-list__answer">
+                  Integer condimentum ipsum id imperdiet finibus. Vivamus in
+                  placerat mi, at euismod dui. Aliquam vitae neque eget nisl
+                  gravida pellentesque non ut velit.
+                </p>
+              </dd>
           </dl>
           <button class="btn btn--default">More info</button>
         </section>
@@ -395,19 +362,19 @@
               </h2>
             </div>
             <form id="form" action="#" class="form">
-                <input
+              <input
                 class="form__input"
                 name="email"
                 id="email"
                 placeholder="Enter your email address"
               />
               <div id="error-icon" class="error-icon">
-                <img src="./images/icon-error.svg" alt="error icon">
+                <img src="./images/icon-error.svg" alt="error icon" />
               </div>
               <div id="error" class="error-container">
-                 <p>Whoops, make sure it's an email</p>
+                <p>Whoops, make sure it's an email</p>
               </div>
-             
+
               <button class="btn btn--wide btn--important">Contact Us</button>
             </form>
           </div>
@@ -458,7 +425,7 @@
       AOS.init({
         duration: 1500,
       });
-      AOS.refresh(); 
+      AOS.refresh();
     </script>
   </body>
 </html>

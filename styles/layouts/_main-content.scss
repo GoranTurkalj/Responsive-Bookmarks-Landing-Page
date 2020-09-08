@@ -240,6 +240,7 @@
   #FAQ-SECTION
 \*------------------------------------------------------*/
  
+
 .description-list {
   font-family: "Rubik"; 
   font-size: 1rem; 
@@ -248,35 +249,47 @@
   margin-bottom: 1rem; 
   width: 100%; 
   max-width: 34rem; 
-  
+
 }
 
 .description-list__question {
-  width: 100%; 
-  text-align: left; 
+  width: 100%;  
   font-family: inherit; 
   font-size: inherit;
   position: relative;
   cursor: pointer; 
+  display: flex; 
+  justify-content: space-between;
+  align-items: center;
+
+
 
   &:hover, &:focus {
     color: $primarySoftRed;
   }
 }
 
+.question-text {
+  
+  text-align: left; 
+  min-width: min-content; 
+  width: fit-content;
+  max-width: 17.2rem; 
+  padding-right: 0.5rem; 
+}
+
+
+
+
 .description-list__arrow {
-  position: absolute; 
-  right: 0; 
-  top: 50%; 
   transition: transform 250ms; 
-  transform: translateY(-50%); 
 }
 
 
 
 //This is applied when user clicks on a question
 .description-list__arrow--expanded { 
-  transform: translateY(-50%) rotateZ(180deg); 
+  transform: rotateZ(180deg); 
   .arrow-stroke {
     stroke: $primarySoftRed;
   }
@@ -286,15 +299,16 @@
 
 .description-list__answer {
   line-height: 2;
-  opacity: 0;  
-  max-height: 0; 
+   max-height: 0;
+   overflow: hidden;   
   transition: all 250ms; 
 
 }
 
 
 .description-list__answer--expanded { 
-  opacity: 1;
+  
+  overflow: visible;
   max-height: 40rem; 
   padding-top: 2.5rem;
   padding-bottom: 0.5rem; 

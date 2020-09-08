@@ -22,6 +22,10 @@
   
 }
 
+.hamburger {
+  cursor: pointer; 
+}
+
 
 //This applies to the main nav when in mobile view and  menu is opened
 .main-nav--mobile-open {
@@ -128,46 +132,6 @@
   margin-top: 12rem;
 }
 
-
-@keyframes animateNav {
-
-
-  0% {
-
-  }
-  100% {}
-}
-
-
-// @keyframes animateNav {
-
-//   0% {
-//     left: -100%; 
-//     max-width: 0; 
-//     border-radius: 0 50vh 50vh 0; 
-//   }
-//   100% { 
-//     left: 0%; 
-//     max-width: 100vw; 
-//      border-radius: 0 0 0 0; 
-//   }
-// }
-
-
-
-// @keyframes animateNavReverse {
-
-//   0% {
-//     left: 0; 
-//     max-width: 100wv; 
-//     border-radius: 0 0 0 0; 
-//   }
-//   100% { 
-//     left: -1000%; 
-//     max-width: 0; 
-//      border-radius: 0 50vh 50vh 0; 
-//   }
-// }
 
 
 @import "./media-header"; 
