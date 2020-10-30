@@ -41,3 +41,15 @@
 
    
 }
+
+//1441px 
+@media only screen and (min-width: 90.0625rem) {
+  
+  footer {
+    height: clamp(5.5rem, 6.11vw, 8rem);
+  }
+
+  .footer-section {
+    height: 100%; 
+  }
+}

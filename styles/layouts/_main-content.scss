@@ -279,8 +279,6 @@
 }
 
 
-
-
 .description-list__arrow {
   transition: transform 250ms; 
 }
@@ -391,6 +389,7 @@
 .error-icon--visible {
   opacity: 1; 
 }
+
 .error-container {
   position: absolute; 
   background-color: $primarySoftRed;

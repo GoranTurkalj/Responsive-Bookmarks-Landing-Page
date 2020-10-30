@@ -30,7 +30,6 @@ body {
   width: 100%;
   font-family: "Rubik";
   margin: 0 auto;
-  max-width: 90rem;
   background-color: white;
 }
 
@@ -230,7 +229,7 @@ body {
             flex-direction: row;
   }
   .nav__link {
-    font-size: 0.80rem;
+    font-size: 0.8rem;
     letter-spacing: 1px;
   }
   .nav__link--main {
@@ -244,7 +243,18 @@ body {
 
 @media only screen and (min-width: 80rem) {
   .main-header {
-    padding: 0 10.25rem;
+    padding: 0 7rem 0 10.25rem;
+  }
+}
+
+@media only screen and (min-width: 90.0625rem) {
+  .nav__link {
+    font-size: clamp(0.8rem, 1vw, 1.3rem);
+  }
+  .logo {
+    height: 1.74vw;
+    width: auto;
+    max-height: 2.2rem;
   }
 }
 
@@ -936,6 +946,17 @@ body {
   }
 }
 
+@media only screen and (min-width: 90.0625rem) {
+  .hero-section {
+    max-width: 90rem;
+    margin: 0 auto 7.5rem auto;
+  }
+  .feature-tab {
+    max-width: 90rem;
+    margin: 0 auto;
+  }
+}
+
 footer {
   background-color: #252b46;
 }
@@ -953,6 +974,15 @@ footer {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.logo-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -1030,6 +1060,15 @@ footer {
 @media only screen and (min-width: 80rem) {
   footer {
     padding: 0 10.25rem;
+  }
+}
+
+@media only screen and (min-width: 90.0625rem) {
+  footer {
+    height: clamp(5.5rem, 6.11vw, 8rem);
+  }
+  .footer-section {
+    height: 100%;
   }
 }
 
@@ -1183,6 +1222,15 @@ footer {
     top: 24%;
     -webkit-transition: all 300ms;
     transition: all 300ms;
+  }
+}
+
+@media only screen and (min-width: 90rem) {
+  .bg-pattern::after {
+    border-radius: 0 50% 0 36%;
+  }
+  .bg-pattern--left::after {
+    border-radius: 50% 36% 0 36%;
   }
 }
 

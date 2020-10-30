@@ -1,7 +1,6 @@
 @media only screen and (min-width: 24rem) {
-
   .image-container--article {
-    margin-bottom: 9rem; 
+    margin-bottom: 9rem;
   }
 
   .question-text {
@@ -9,232 +8,186 @@
   }
 }
 
-
-
 @media only screen and (min-width: 31.25rem) {
- 
-/*------------------------------------------------------*\
+  /*------------------------------------------------------*\
   #HERO-SECTION
 \*------------------------------------------------------*/
 
   .image-container {
-   margin-bottom: 7rem;
-   }
-  
-   .image-container--article {
-    margin-bottom: 9rem; 
+    margin-bottom: 7rem;
   }
-  
 
+  .image-container--article {
+    margin-bottom: 9rem;
+  }
 }
 
-
-//600px 
+//600px
 @media only screen and (min-width: 37.5rem) {
-  
   /*------------------------------------------------------*\
   #FEATURES-SECTION
   \*------------------------------------------------------*/
-   .feature-tab {
-       flex-direction: row; 
-       padding-right: 3rem; 
-    }
-  
+  .feature-tab {
+    flex-direction: row;
+    padding-right: 3rem;
+  }
 }
-
 
 //664px
 @media only screen and (min-width: 41.5rem) {
- 
-/*------------------------------------------------------*\
+  /*------------------------------------------------------*\
   #HERO-SECTION
 \*------------------------------------------------------*/
 
   .hero-section {
-    display: flex; 
-    flex-direction: row-reverse; 
+    display: flex;
+    flex-direction: row-reverse;
     justify-content: space-between;
     align-items: center;
   }
 
-  
   .image-container {
-    margin-bottom: 0; 
+    margin-bottom: 0;
   }
 
-
   .title-container {
-   min-width: 22rem; 
+    min-width: 22rem;
   }
 
   .content--responsive {
     padding: 0;
-    padding-left: 2rem; 
+    padding-left: 2rem;
   }
 
-
- .controls__wrapper {
-  padding: 0 2rem; 
- }
+  .controls__wrapper {
+    padding: 0 2rem;
+  }
 
   .content__controls {
-      min-width: 19.8rem; 
+    min-width: 19.8rem;
   }
-  
-  .content__subtitle--light {
-  
-  font-size: $h2FontDesk;  
-  letter-spacing: normal;
-  margin-top: 2.5rem; 
-  margin-bottom: 2rem; 
-  width: 30.5rem; 
- 
-}
 
- 
+  .content__subtitle--light {
+    font-size: $h2FontDesk;
+    letter-spacing: normal;
+    margin-top: 2.5rem;
+    margin-bottom: 2rem;
+    width: 30.5rem;
+  }
+
   /*------------------------------------------------------*\
   #FEATURES-SECTION
   \*------------------------------------------------------*/
-    
-    
-     .features-list {
-     max-width: 48rem;
-     display: flex; 
-     justify-content: space-between;
-     
+
+  .features-list {
+    max-width: 48rem;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .features-list__item {
+    border-bottom: 1px solid lighten($grayishBlue, 25%);
+    width: 33.33%;
+  }
+
+  .features-list__link {
+    padding: 2rem 0;
+    border-bottom: none;
+  }
+
+  .features-list__link--active {
+    &::after {
+      content: "";
+      width: 100%;
     }
+  }
 
-    .features-list__item {
-      border-bottom: 1px solid lighten($grayishBlue, 25%);
-       width: 33.33%;  
+  .features-list__item:first-of-type {
+    a {
+      border-top: none;
     }
+  }
 
-
-    .features-list__link {
-      padding: 2rem 0; 
-      border-bottom: none;
+  .features-list__item:nth-of-type(2) {
+    a {
+      padding-left: 1rem;
     }
-
-
-    .features-list__link--active {
-  
-     &::after {
-       content: ""; 
-       width: 100%;  
-     }
-   }
-
-   .features-list__item:first-of-type {
-     a {
-       border-top: none;
-     }
-   }
-
-   .features-list__item:nth-of-type(2){
-
-     a {
-       padding-left: 1rem; 
-     }
-   }
-   
-
-  
+  }
 
   /*------------------------------------------------------*\
   #CONTACT-SECTION
   \*------------------------------------------------------*/
 
-   .form {
-    width: 28rem; 
-    max-width: 28rem; 
-    display: flex; 
-    flex-direction: row; 
+  .form {
+    width: 28rem;
+    max-width: 28rem;
+    display: flex;
+    flex-direction: row;
     align-items: center;
-   
-   
   }
 
-   .form__input {
-   
-   width: 100%; 
-   max-width: 19.5rem; 
-   border-radius: $primaryRadius; 
-   margin-bottom: 1rem; 
-  
+  .form__input {
+    width: 100%;
+    max-width: 19.5rem;
+    border-radius: $primaryRadius;
+    margin-bottom: 1rem;
   }
 
   .error-icon {
-    left: 62%; 
-    top: 19%; 
+    left: 62%;
+    top: 19%;
   }
 
   .error-container {
-    top: 104%; 
-    transform: translateY(-220%); 
-    
+    top: 104%;
+    transform: translateY(-220%);
   }
 
-  
   .error-container--visible {
     transform: translateY(-88%);
   }
-
-
-
 }
 
-
 //800px
-@media only screen and (min-width: 50rem) { 
-
+@media only screen and (min-width: 50rem) {
   .description-list {
     dt:first-of-type {
-      border-top: 1px solid $borderAccentColor;  
-      padding-top: 2rem;  
+      border-top: 1px solid $borderAccentColor;
+      padding-top: 2rem;
     }
   }
 }
-
-
 
 //960px
 @media only screen and (min-width: 60rem) {
-
-/*------------------------------------------------------*\
+  /*------------------------------------------------------*\
 #EXTENSIONS-SECTION
 \*------------------------------------------------------*/
-    .extension-list {
-      flex-direction: row; 
-      width: 56.5rem; 
-      margin-top: 0; 
-
-     }
-
-    .extension-card:nth-of-type(2) {
-      margin-top: 5.5rem; 
-    }
-    .extension-card:nth-of-type(3) {
-      margin-top: 10.5rem; 
-    }
- 
-}
-
-
-@media only screen and (min-width: 73.5rem) {
-
-  
-   
-    .content__text { 
-    font-size: $normalTxtDesk;
-   }
-
-   .content__subtitle {
-    font-size: $h2FontDesk; 
-    letter-spacing: normal; 
+  .extension-list {
+    flex-direction: row;
+    width: 56.5rem;
+    margin-top: 0;
   }
 
+  .extension-card:nth-of-type(2) {
+    margin-top: 5.5rem;
+  }
+  .extension-card:nth-of-type(3) {
+    margin-top: 10.5rem;
+  }
+}
 
-/*------------------------------------------------------*\
+@media only screen and (min-width: 73.5rem) {
+  .content__text {
+    font-size: $normalTxtDesk;
+  }
+
+  .content__subtitle {
+    font-size: $h2FontDesk;
+    letter-spacing: normal;
+  }
+
+  /*------------------------------------------------------*\
 #FAQ-SECTION
 \*------------------------------------------------------*/
 
@@ -242,68 +195,62 @@
     font-size: $normalTxtDesk;
   }
 
-  
   .description-list__answer {
     font-size: 1.05rem;
   }
 }
 
-
 //1280 px
 @media only screen and (min-width: 80rem) {
-
-
-/*------------------------------------------------------*\
+  /*------------------------------------------------------*\
   #HERO-SECTION
 \*------------------------------------------------------*/
 
+  .title-container {
+    max-width: 45.25rem;
+    padding-left: 8.25rem;
+  }
 
-   .title-container {
-    max-width: 45.25rem; 
-    padding-left: 8.25rem;  
-    }
+  .content-section--mrb15 {
+    margin-bottom: 15rem;
+  }
 
+  .content__text--limited {
+    padding-right: 6rem;
+  }
 
-    .content-section--mrb15 {
-      margin-bottom: 15rem; 
-    }
-
-
-    .content__text--limited {
-
-      padding-right: 6rem; 
-    }
-    
-   /*------------------------------------------------------*\
+  /*------------------------------------------------------*\
   #FEATURES-SECTION
   \*------------------------------------------------------*/
 
+  .image-container--article {
+    max-width: 43.5rem;
+    justify-content: flex-end;
+  }
 
-
-    .image-container--article {
-      max-width: 43.5rem; 
-      justify-content: flex-end;
-      
-
-      
-    }
-
-    .features-tab__image {
-      padding: 0; 
-      width: auto;
-     
-      
-    }
+  .features-tab__image {
+    padding: 0;
+    width: auto;
+  }
 }
 
-
-//1365px 
+//1365px
 @media only screen and (min-width: 85rem) {
-   
-    .content__title {
-      font-size: $h1FontDesk; 
-      font-weight: 500;
-   }
+  .content__title {
+    font-size: $h1FontDesk;
+    font-weight: 500;
+  }
+}
 
+//1441px
+@media only screen and (min-width: 90.0625rem) {
+  .hero-section {
+    max-width: 90rem;
+    margin: 0 auto 7.5rem auto;
+  }
 
+  .feature-tab {
+    max-width: 90rem;
+    margin: 0 auto;
+  }
 }
